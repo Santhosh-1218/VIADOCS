@@ -1,0 +1,199 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 4s ease infinite;
+}
+
+/* Headings inside editor */
+.editor h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+.editor h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.75em 0;
+}
+.editor h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+.editor h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+.editor h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+  margin: 1.33em 0;
+}
+.editor h6 {
+  font-size: 0.67em;
+  font-weight: bold;
+  margin: 1.67em 0;
+}
+
+/* Image selection outline */
+.doc-image.selected,
+.doc-image-wrapper.selected {
+  outline: 2px solid #4f46e5; /* purple border */
+  outline-offset: 3px;
+}
+
+/* Image wrapper */
+.doc-image-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.doc-image-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make list markers follow li text color */
+.editor ul li::marker,
+.editor ol li::marker {
+  color: inherit;
+}
+
+/* ======================= */
+/* TABLE RESIZING STYLES   */
+/* ======================= */
+
+/* Ensure all tables inside editor are resizable */
+.resizable-table {
+  border-collapse: collapse;
+  width: auto;
+  table-layout: auto;
+}
+
+/* Table cells */
+.resizable-table td {
+  position: relative;
+  padding: 8px;
+  border: 1px solid #ccc;
+  min-width: 60px;
+  min-height: 30px;
+}
+
+/* Column resizer handle */
+.resizable-table .col-resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  user-select: none;
+  background: transparent; /* invisible by default */
+}
+
+/* Row resizer handle */
+.resizable-table .row-resizer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  cursor: row-resize;
+  user-select: none;
+  background: transparent; /* invisible by default */
+}
+
+/* Highlight when hovering resizers */
+.resizable-table .col-resizer:hover,
+.resizable-table .row-resizer:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.resizable-table td {
+  position: relative;
+}
+
+.col-resizer, .row-resizer {
+  background: transparent; /* invisible by default */
+}
+
+.col-resizer:hover, .row-resizer:hover {
+  background: rgba(0, 0, 0, 0.1); /* small highlight when hovered */
+}
+.col-resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  background: rgba(0, 0, 0, 0.2); /* visible */
+}
+
+.row-resizer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  cursor: row-resize;
+  background: rgba(0, 0, 0, 0.2); /* visible */
+}
+.object-cover {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+/* When header is fixed, add top padding to main app container */
+.app-with-fixed-header {
+  padding-top: 56px; /* mobile header height */
+}
+@media (min-width: 640px) {
+  .app-with-fixed-header {
+    padding-top: 72px; /* desktop header height */
+  }
+}

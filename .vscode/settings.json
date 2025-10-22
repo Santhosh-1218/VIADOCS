@@ -1,0 +1,16 @@
+{
+  "css.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascriptreact",
+    "javascriptreact": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "git.ignoreLimitWarning": true
+}

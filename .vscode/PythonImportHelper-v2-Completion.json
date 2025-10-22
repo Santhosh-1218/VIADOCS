@@ -1,0 +1,2456 @@
+[
+    {
+        "label": "PyMongo",
+        "importPath": "flask_pymongo",
+        "description": "flask_pymongo",
+        "isExtraImport": true,
+        "detail": "flask_pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "current_app",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "current_app",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "current_app",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "current_app",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_from_directory",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "pikepdf",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pikepdf",
+        "description": "pikepdf",
+        "detail": "pikepdf",
+        "documentation": {}
+    },
+    {
+        "label": "jwt_required",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "jwt_required",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "get_jwt_identity",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "jwt_required",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "get_jwt_identity",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "jwt_required",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "get_jwt_identity",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "jwt_required",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "get_jwt_identity",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "JWTManager",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "PdfMerger",
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "isExtraImport": true,
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
+        "label": "PdfReader",
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "isExtraImport": true,
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
+        "label": "PdfWriter",
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "isExtraImport": true,
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
+        "label": "zipfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "convert_from_path",
+        "importPath": "pdf2image",
+        "description": "pdf2image",
+        "isExtraImport": true,
+        "detail": "pdf2image",
+        "documentation": {}
+    },
+    {
+        "label": "Converter",
+        "importPath": "pdf2docx",
+        "description": "pdf2docx",
+        "isExtraImport": true,
+        "detail": "pdf2docx",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "utils.security",
+        "description": "utils.security",
+        "isExtraImport": true,
+        "detail": "utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "importPath": "utils.security",
+        "description": "utils.security",
+        "isExtraImport": true,
+        "detail": "utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "tools_bp",
+        "importPath": "routes.tools",
+        "description": "routes.tools",
+        "isExtraImport": true,
+        "detail": "routes.tools",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "winreg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "winreg",
+        "description": "winreg",
+        "detail": "winreg",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "auth_bp",
+        "importPath": "routes.auth_routes",
+        "description": "routes.auth_routes",
+        "isExtraImport": true,
+        "detail": "routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "docs_bp",
+        "importPath": "routes.docs_routes",
+        "description": "routes.docs_routes",
+        "isExtraImport": true,
+        "detail": "routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "user_bp",
+        "importPath": "routes.user_routes",
+        "description": "routes.user_routes",
+        "isExtraImport": true,
+        "detail": "routes.user_routes",
+        "documentation": {}
+    },
+    {
+        "label": "contact_bp",
+        "importPath": "routes.contact_routes",
+        "description": "routes.contact_routes",
+        "isExtraImport": true,
+        "detail": "routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "docai_bp",
+        "importPath": "routes.docai_routes",
+        "description": "routes.docai_routes",
+        "isExtraImport": true,
+        "detail": "routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "feedback_bp",
+        "importPath": "routes.feedback_routes",
+        "description": "routes.feedback_routes",
+        "isExtraImport": true,
+        "detail": "routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "tools_bp",
+        "importPath": "routes.tools_routes",
+        "description": "routes.tools_routes",
+        "isExtraImport": true,
+        "detail": "routes.tools_routes",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "kind": 2,
+        "importPath": "backend.config.mongo",
+        "description": "backend.config.mongo",
+        "peekOfCode": "def init_db(app: Flask):\n    app.config[\"MONGO_URI\"] = os.getenv(\"MONGO_URI\")\n    mongo.init_app(app)",
+        "detail": "backend.config.mongo",
+        "documentation": {}
+    },
+    {
+        "label": "mongo",
+        "kind": 5,
+        "importPath": "backend.config.mongo",
+        "description": "backend.config.mongo",
+        "peekOfCode": "mongo = PyMongo()\ndef init_db(app: Flask):\n    app.config[\"MONGO_URI\"] = os.getenv(\"MONGO_URI\")\n    mongo.init_app(app)",
+        "detail": "backend.config.mongo",
+        "documentation": {}
+    },
+    {
+        "label": "convert_excel_to_pdf",
+        "kind": 2,
+        "importPath": "backend.routes.tools.excel_to_pdf_routes",
+        "description": "backend.routes.tools.excel_to_pdf_routes",
+        "peekOfCode": "def convert_excel_to_pdf():\n    \"\"\"\n    Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]\n    if file.filename == \"\":\n        return jsonify({\"error\": \"No file selected\"}), 400\n    if not file.filename.lower().endswith((\".xls\", \".xlsx\")):",
+        "detail": "backend.routes.tools.excel_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "excel_to_pdf_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.excel_to_pdf_routes",
+        "description": "backend.routes.tools.excel_to_pdf_routes",
+        "peekOfCode": "excel_to_pdf_bp = Blueprint(\"excel_to_pdf_bp\", __name__)\n# Folder for converted PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"excel-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@excel_to_pdf_bp.route(\"/api/tools/excel-to-pdf\", methods=[\"POST\"])\ndef convert_excel_to_pdf():\n    \"\"\"\n    Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:",
+        "detail": "backend.routes.tools.excel_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.excel_to_pdf_routes",
+        "description": "backend.routes.tools.excel_to_pdf_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"excel-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@excel_to_pdf_bp.route(\"/api/tools/excel-to-pdf\", methods=[\"POST\"])\ndef convert_excel_to_pdf():\n    \"\"\"\n    Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
+        "detail": "backend.routes.tools.excel_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "image_to_pdf",
+        "kind": 2,
+        "importPath": "backend.routes.tools.image_to_pdf_routes",
+        "description": "backend.routes.tools.image_to_pdf_routes",
+        "peekOfCode": "def image_to_pdf():\n    \"\"\"\n    Convert multiple uploaded images into a single PDF file.\n    \"\"\"\n    try:\n        # ✅ Check for uploaded images\n        if \"images\" not in request.files:\n            return jsonify({\"error\": \"No images uploaded\"}), 400\n        files = request.files.getlist(\"images\")\n        if not files or len(files) == 0:",
+        "detail": "backend.routes.tools.image_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "image_to_pdf_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.image_to_pdf_routes",
+        "description": "backend.routes.tools.image_to_pdf_routes",
+        "peekOfCode": "image_to_pdf_bp = Blueprint(\"image_to_pdf_bp\", __name__)\n# --- Upload folder setup ---\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"image-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@image_to_pdf_bp.route(\"/api/tools/image-to-pdf\", methods=[\"POST\"])\ndef image_to_pdf():\n    \"\"\"\n    Convert multiple uploaded images into a single PDF file.\n    \"\"\"\n    try:",
+        "detail": "backend.routes.tools.image_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.image_to_pdf_routes",
+        "description": "backend.routes.tools.image_to_pdf_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"image-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@image_to_pdf_bp.route(\"/api/tools/image-to-pdf\", methods=[\"POST\"])\ndef image_to_pdf():\n    \"\"\"\n    Convert multiple uploaded images into a single PDF file.\n    \"\"\"\n    try:\n        # ✅ Check for uploaded images\n        if \"images\" not in request.files:",
+        "detail": "backend.routes.tools.image_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "allowed_file",
+        "kind": 2,
+        "importPath": "backend.routes.tools.password_protect_routes",
+        "description": "backend.routes.tools.password_protect_routes",
+        "peekOfCode": "def allowed_file(filename: str):\n    _, ext = os.path.splitext(filename.lower())\n    return ext in ALLOWED_EXT\n@password_protect_bp.route(\"/unlock-pdf/check\", methods=[\"POST\"])\ndef check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile\n    Returns: JSON { locked: bool, message: str }\n    \"\"\"",
+        "detail": "backend.routes.tools.password_protect_routes",
+        "documentation": {}
+    },
+    {
+        "label": "check_pdf_lock",
+        "kind": 2,
+        "importPath": "backend.routes.tools.password_protect_routes",
+        "description": "backend.routes.tools.password_protect_routes",
+        "peekOfCode": "def check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile\n    Returns: JSON { locked: bool, message: str }\n    \"\"\"\n    file = request.files.get(\"pdfFile\")\n    if not file:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    filename = secure_filename(file.filename)",
+        "detail": "backend.routes.tools.password_protect_routes",
+        "documentation": {}
+    },
+    {
+        "label": "password_protect",
+        "kind": 2,
+        "importPath": "backend.routes.tools.password_protect_routes",
+        "description": "backend.routes.tools.password_protect_routes",
+        "peekOfCode": "def password_protect():\n    \"\"\"\n    Add password to an unlocked PDF file.\n    Expects: form-data -> pdf (file), password (string)\n    Returns: protected PDF file (as blob)\n    \"\"\"\n    file = request.files.get(\"pdf\")\n    password = request.form.get(\"password\")\n    if not file or not password:\n        return jsonify({\"error\": \"Missing PDF or password\"}), 400",
+        "detail": "backend.routes.tools.password_protect_routes",
+        "documentation": {}
+    },
+    {
+        "label": "reset_pdf_password",
+        "kind": 2,
+        "importPath": "backend.routes.tools.password_protect_routes",
+        "description": "backend.routes.tools.password_protect_routes",
+        "peekOfCode": "def reset_pdf_password():\n    \"\"\"\n    Reset password for an already locked PDF file.\n    Expects: form-data -> pdf (file), oldPassword, newPassword\n    Returns: PDF file with updated password\n    \"\"\"\n    file = request.files.get(\"pdf\")\n    old_pw = request.form.get(\"oldPassword\")\n    new_pw = request.form.get(\"newPassword\")\n    if not file or not old_pw or not new_pw:",
+        "detail": "backend.routes.tools.password_protect_routes",
+        "documentation": {}
+    },
+    {
+        "label": "password_protect_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.password_protect_routes",
+        "description": "backend.routes.tools.password_protect_routes",
+        "peekOfCode": "password_protect_bp = Blueprint(\"password_protect_bp\", __name__, url_prefix=\"/api/tools\")\nALLOWED_EXT = {\".pdf\"}\ndef allowed_file(filename: str):\n    _, ext = os.path.splitext(filename.lower())\n    return ext in ALLOWED_EXT\n@password_protect_bp.route(\"/unlock-pdf/check\", methods=[\"POST\"])\ndef check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile",
+        "detail": "backend.routes.tools.password_protect_routes",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_EXT",
+        "kind": 5,
+        "importPath": "backend.routes.tools.password_protect_routes",
+        "description": "backend.routes.tools.password_protect_routes",
+        "peekOfCode": "ALLOWED_EXT = {\".pdf\"}\ndef allowed_file(filename: str):\n    _, ext = os.path.splitext(filename.lower())\n    return ext in ALLOWED_EXT\n@password_protect_bp.route(\"/unlock-pdf/check\", methods=[\"POST\"])\ndef check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile\n    Returns: JSON { locked: bool, message: str }",
+        "detail": "backend.routes.tools.password_protect_routes",
+        "documentation": {}
+    },
+    {
+        "label": "compress_pdf",
+        "kind": 2,
+        "importPath": "backend.routes.tools.pdf_compress_routes",
+        "description": "backend.routes.tools.pdf_compress_routes",
+        "peekOfCode": "def compress_pdf():\n    \"\"\"\n    Compress a PDF using Ghostscript.\n    Form-data: { file: <PDF>, mode: <extreme|recommended|low> }\n    \"\"\"\n    try:\n        # --- Validate file ---\n        if \"file\" not in request.files:\n            return jsonify({\"error\": \"No file uploaded\"}), 400\n        file = request.files[\"file\"]",
+        "detail": "backend.routes.tools.pdf_compress_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_compress_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_compress_routes",
+        "description": "backend.routes.tools.pdf_compress_routes",
+        "peekOfCode": "pdf_compress_bp = Blueprint(\"pdf_compress_bp\", __name__)\n# Upload folder for temporary storage\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-compress\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_compress_bp.route(\"/api/tools/pdf/compress\", methods=[\"POST\"])\n@jwt_required()  # ✅ Require valid JWT (matches frontend header)\ndef compress_pdf():\n    \"\"\"\n    Compress a PDF using Ghostscript.\n    Form-data: { file: <PDF>, mode: <extreme|recommended|low> }",
+        "detail": "backend.routes.tools.pdf_compress_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_compress_routes",
+        "description": "backend.routes.tools.pdf_compress_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-compress\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_compress_bp.route(\"/api/tools/pdf/compress\", methods=[\"POST\"])\n@jwt_required()  # ✅ Require valid JWT (matches frontend header)\ndef compress_pdf():\n    \"\"\"\n    Compress a PDF using Ghostscript.\n    Form-data: { file: <PDF>, mode: <extreme|recommended|low> }\n    \"\"\"\n    try:",
+        "detail": "backend.routes.tools.pdf_compress_routes",
+        "documentation": {}
+    },
+    {
+        "label": "merge_pdfs",
+        "kind": 2,
+        "importPath": "backend.routes.tools.pdf_merge_routes",
+        "description": "backend.routes.tools.pdf_merge_routes",
+        "peekOfCode": "def merge_pdfs():\n    \"\"\"\n    Merge multiple PDF files into one.\n    Expects multiple 'files' in form-data.\n    Returns a merged PDF blob.\n    \"\"\"\n    try:\n        # ✅ Step 1: Get uploaded files\n        uploaded_files = request.files.getlist(\"files\")\n        if not uploaded_files or len(uploaded_files) < 2:",
+        "detail": "backend.routes.tools.pdf_merge_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_merge_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_merge_routes",
+        "description": "backend.routes.tools.pdf_merge_routes",
+        "peekOfCode": "pdf_merge_bp = Blueprint(\"pdf_merge_bp\", __name__)\n# Folder for uploads\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-merge\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_merge_bp.route(\"/api/tools/pdf-merge\", methods=[\"POST\"])\ndef merge_pdfs():\n    \"\"\"\n    Merge multiple PDF files into one.\n    Expects multiple 'files' in form-data.\n    Returns a merged PDF blob.",
+        "detail": "backend.routes.tools.pdf_merge_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_merge_routes",
+        "description": "backend.routes.tools.pdf_merge_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-merge\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_merge_bp.route(\"/api/tools/pdf-merge\", methods=[\"POST\"])\ndef merge_pdfs():\n    \"\"\"\n    Merge multiple PDF files into one.\n    Expects multiple 'files' in form-data.\n    Returns a merged PDF blob.\n    \"\"\"\n    try:",
+        "detail": "backend.routes.tools.pdf_merge_routes",
+        "documentation": {}
+    },
+    {
+        "label": "split_pdf",
+        "kind": 2,
+        "importPath": "backend.routes.tools.pdf_split_routes",
+        "description": "backend.routes.tools.pdf_split_routes",
+        "peekOfCode": "def split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.endswith(\".pdf\"):\n            return jsonify({\"error\": \"Please upload a valid PDF file\"}), 400\n        range_str = request.form.get(\"ranges\", \"\")\n        if not range_str or \"-\" not in range_str:\n            return jsonify({\"error\": \"Invalid page range format\"}), 400\n        try:",
+        "detail": "backend.routes.tools.pdf_split_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_split_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_split_routes",
+        "description": "backend.routes.tools.pdf_split_routes",
+        "peekOfCode": "pdf_split_bp = Blueprint(\"pdf_split_bp\", __name__)\n# Folder to save temporary files\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-split\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_split_bp.route(\"/api/tools/pdf-split\", methods=[\"POST\"])\ndef split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.endswith(\".pdf\"):",
+        "detail": "backend.routes.tools.pdf_split_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_split_routes",
+        "description": "backend.routes.tools.pdf_split_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-split\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_split_bp.route(\"/api/tools/pdf-split\", methods=[\"POST\"])\ndef split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.endswith(\".pdf\"):\n            return jsonify({\"error\": \"Please upload a valid PDF file\"}), 400\n        range_str = request.form.get(\"ranges\", \"\")",
+        "detail": "backend.routes.tools.pdf_split_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_to_image",
+        "kind": 2,
+        "importPath": "backend.routes.tools.pdf_to_image_routes",
+        "description": "backend.routes.tools.pdf_to_image_routes",
+        "peekOfCode": "def pdf_to_image():\n    \"\"\"Convert a PDF file into individual images and return them as a ZIP.\"\"\"\n    try:\n        if \"file\" not in request.files:\n            return jsonify({\"error\": \"No file part in request\"}), 400\n        pdf_file = request.files[\"file\"]\n        if not pdf_file or pdf_file.filename == \"\":\n            return jsonify({\"error\": \"No selected file\"}), 400\n        # Save uploaded PDF\n        filename = secure_filename(pdf_file.filename)",
+        "detail": "backend.routes.tools.pdf_to_image_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_to_image_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_to_image_routes",
+        "description": "backend.routes.tools.pdf_to_image_routes",
+        "peekOfCode": "pdf_to_image_bp = Blueprint(\"pdf_to_image_bp\", __name__)\n# Folder for uploads\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-image\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# Path to Poppler (⚠️ Update this path for your system)\n# Example for Windows:\nPOPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux/Mac, you can remove poppler_path argument completely.\n@pdf_to_image_bp.route(\"/api/tools/pdf-to-image\", methods=[\"POST\"])\ndef pdf_to_image():",
+        "detail": "backend.routes.tools.pdf_to_image_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_to_image_routes",
+        "description": "backend.routes.tools.pdf_to_image_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-image\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# Path to Poppler (⚠️ Update this path for your system)\n# Example for Windows:\nPOPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux/Mac, you can remove poppler_path argument completely.\n@pdf_to_image_bp.route(\"/api/tools/pdf-to-image\", methods=[\"POST\"])\ndef pdf_to_image():\n    \"\"\"Convert a PDF file into individual images and return them as a ZIP.\"\"\"\n    try:",
+        "detail": "backend.routes.tools.pdf_to_image_routes",
+        "documentation": {}
+    },
+    {
+        "label": "POPPLER_PATH",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_to_image_routes",
+        "description": "backend.routes.tools.pdf_to_image_routes",
+        "peekOfCode": "POPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux/Mac, you can remove poppler_path argument completely.\n@pdf_to_image_bp.route(\"/api/tools/pdf-to-image\", methods=[\"POST\"])\ndef pdf_to_image():\n    \"\"\"Convert a PDF file into individual images and return them as a ZIP.\"\"\"\n    try:\n        if \"file\" not in request.files:\n            return jsonify({\"error\": \"No file part in request\"}), 400\n        pdf_file = request.files[\"file\"]\n        if not pdf_file or pdf_file.filename == \"\":",
+        "detail": "backend.routes.tools.pdf_to_image_routes",
+        "documentation": {}
+    },
+    {
+        "label": "convert_pdf_to_word",
+        "kind": 2,
+        "importPath": "backend.routes.tools.pdf_to_word_routes",
+        "description": "backend.routes.tools.pdf_to_word_routes",
+        "peekOfCode": "def convert_pdf_to_word():\n    \"\"\"\n    Route: POST /api/tools/pdf-to-word\n    Accepts: multipart/form-data (with 'file' field)\n    Returns: converted Word (.docx) file for download\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]\n    if file.filename == \"\":",
+        "detail": "backend.routes.tools.pdf_to_word_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_to_word_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_to_word_routes",
+        "description": "backend.routes.tools.pdf_to_word_routes",
+        "peekOfCode": "pdf_to_word_bp = Blueprint(\"pdf_to_word\", __name__)\n# Folder to store uploaded PDFs and converted DOCX files\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-word\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_to_word_bp.route(\"/api/tools/pdf-to-word\", methods=[\"POST\"])\ndef convert_pdf_to_word():\n    \"\"\"\n    Route: POST /api/tools/pdf-to-word\n    Accepts: multipart/form-data (with 'file' field)\n    Returns: converted Word (.docx) file for download",
+        "detail": "backend.routes.tools.pdf_to_word_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.pdf_to_word_routes",
+        "description": "backend.routes.tools.pdf_to_word_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-word\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_to_word_bp.route(\"/api/tools/pdf-to-word\", methods=[\"POST\"])\ndef convert_pdf_to_word():\n    \"\"\"\n    Route: POST /api/tools/pdf-to-word\n    Accepts: multipart/form-data (with 'file' field)\n    Returns: converted Word (.docx) file for download\n    \"\"\"\n    if \"file\" not in request.files:",
+        "detail": "backend.routes.tools.pdf_to_word_routes",
+        "documentation": {}
+    },
+    {
+        "label": "convert_ppt_to_pdf",
+        "kind": 2,
+        "importPath": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "description": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "peekOfCode": "def convert_ppt_to_pdf():\n    \"\"\"\n    Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]\n    if file.filename == \"\":\n        return jsonify({\"error\": \"No file selected\"}), 400\n    if not file.filename.lower().endswith((\".ppt\", \".pptx\")):",
+        "detail": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "powerpoint_to_pdf_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "description": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "peekOfCode": "powerpoint_to_pdf_bp = Blueprint(\"powerpoint_to_pdf_bp\", __name__)\n# Folder for output PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"powerpoint-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@powerpoint_to_pdf_bp.route(\"/api/tools/ppt-to-pdf\", methods=[\"POST\"])\ndef convert_ppt_to_pdf():\n    \"\"\"\n    Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)\n    \"\"\"\n    if \"file\" not in request.files:",
+        "detail": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "description": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"powerpoint-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@powerpoint_to_pdf_bp.route(\"/api/tools/ppt-to-pdf\", methods=[\"POST\"])\ndef convert_ppt_to_pdf():\n    \"\"\"\n    Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
+        "detail": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "convert_word_to_pdf",
+        "kind": 2,
+        "importPath": "backend.routes.tools.word_to_pdf_routes",
+        "description": "backend.routes.tools.word_to_pdf_routes",
+        "peekOfCode": "def convert_word_to_pdf():\n    \"\"\"\n    Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]\n    if file.filename == \"\":\n        return jsonify({\"error\": \"No file selected\"}), 400\n    if not file.filename.lower().endswith((\".docx\", \".doc\")):",
+        "detail": "backend.routes.tools.word_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "word_to_pdf_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.word_to_pdf_routes",
+        "description": "backend.routes.tools.word_to_pdf_routes",
+        "peekOfCode": "word_to_pdf_bp = Blueprint(\"word_to_pdf_bp\", __name__)\n# Folder to save converted PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"word-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@word_to_pdf_bp.route(\"/api/tools/word-to-pdf\", methods=[\"POST\"])\ndef convert_word_to_pdf():\n    \"\"\"\n    Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:",
+        "detail": "backend.routes.tools.word_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.word_to_pdf_routes",
+        "description": "backend.routes.tools.word_to_pdf_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"word-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@word_to_pdf_bp.route(\"/api/tools/word-to-pdf\", methods=[\"POST\"])\ndef convert_word_to_pdf():\n    \"\"\"\n    Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
+        "detail": "backend.routes.tools.word_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "check_username",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def check_username():\n    \"\"\"Verify if username is available\"\"\"\n    try:\n        username = request.args.get(\"username\", \"\").strip().lower()\n        if not username:\n            return jsonify({\"available\": False, \"error\": \"Missing username\"}), 400\n        db = current_app.db\n        exists = db.users.find_one({\"username\": username})\n        return jsonify({\"available\": not bool(exists)}), 200\n    except Exception as e:",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "check_email",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def check_email():\n    \"\"\"Verify if email is already used\"\"\"\n    try:\n        email = request.args.get(\"email\", \"\").strip().lower()\n        if not email:\n            return jsonify({\"available\": False, \"error\": \"Missing email\"}), 400\n        db = current_app.db\n        exists = db.users.find_one({\"email\": email})\n        return jsonify({\"available\": not bool(exists)}), 200\n    except Exception as e:",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "check_referral",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def check_referral():\n    \"\"\"Validate referral code\"\"\"\n    code = request.args.get(\"code\", \"\").strip().upper()\n    valid = code in VALID_REFERRALS\n    return jsonify({\"valid\": valid}), 200\n# ----------------------------------------------------------\n# REGISTER NEW USER\n# ----------------------------------------------------------\n@auth_bp.route(\"/register\", methods=[\"POST\"])\ndef register():",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def register():\n    \"\"\"Register a new user\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        required = [\"username\", \"first_name\", \"last_name\",\n                    \"email\", \"password\", \"dob\", \"gender\"]\n        if not all(k in data and data[k] for k in required):\n            return jsonify({\"error\": \"Missing fields\"}), 400\n        if db.users.find_one({\"email\": data[\"email\"].lower()}):",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def login():\n    \"\"\"Authenticate user and return JWT\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        email = data.get(\"email\", \"\").lower()\n        password = data.get(\"password\", \"\")\n        user = db.users.find_one({\"email\": email})\n        if not user or not check_password(password, user[\"password\"]):\n            return jsonify({\"message\": \"Invalid email or password\"}), 401",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "verify_user",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def verify_user():\n    \"\"\"Verify if JWT is valid and fetch user header info\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        user = db.users.find_one({\"_id\": ObjectId(user_id)}, {\"password\": 0})\n        if not user:\n            return jsonify({\"loggedIn\": False}), 404\n        return jsonify({\n            \"loggedIn\": True,",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def get_db():\n    return current_app.db\n# ==========================================================\n# 🔐 FORGOT PASSWORD SYSTEM (OTP + RESET)\n# ==========================================================\notp_store = {}\nEMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp_email",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,\nYour password reset OTP is: {otp}\nThis OTP will expire in 5 minutes.\nIf you didn’t request this, please ignore this email.\n— Team Viadocs\n\"\"\")",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def send_otp():\n    try:\n        db = get_db()\n        data = request.get_json()\n        email = data.get(\"email\", \"\").strip().lower()\n        if not email:\n            return jsonify({\"message\": \"Email is required\"}), 400\n        user = db.users.find_one({\"email\": email})\n        if not user:\n            return jsonify({\"message\": \"Email not registered\"}), 404",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "verify_otp",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def verify_otp():\n    try:\n        data = request.get_json()\n        email = data.get(\"email\", \"\").lower()\n        otp = data.get(\"otp\", \"\")\n        if not email or not otp:\n            return jsonify({\"message\": \"Missing email or OTP\"}), 400\n        record = otp_store.get(email)\n        if not record:\n            return jsonify({\"message\": \"OTP not found\"}), 400",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "reset_password",
+        "kind": 2,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "def reset_password():\n    try:\n        db = get_db()\n        data = request.get_json()\n        email = data.get(\"email\", \"\").lower()\n        new_password = data.get(\"newPassword\", \"\")\n        if not email or not new_password:\n            return jsonify({\"message\": \"Missing fields\"}), 400\n        record = otp_store.get(email)\n        if not record:",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "auth_bp",
+        "kind": 5,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "auth_bp = Blueprint(\"auth\", __name__)\nload_dotenv()\n# ----------------------------------------------------------\n# VALID REFERRAL CODES\n# ----------------------------------------------------------\nVALID_REFERRALS = {\"DOC1\", \"DOC2\", \"DOC3\", \"DOC4\", \"DOC5\",\n                   \"DOC6\", \"DOC7\", \"DOC8\", \"DOC9\", \"DOC10\"}\n# ----------------------------------------------------------\n# CHECK USERNAME\n# ----------------------------------------------------------",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "VALID_REFERRALS",
+        "kind": 5,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "VALID_REFERRALS = {\"DOC1\", \"DOC2\", \"DOC3\", \"DOC4\", \"DOC5\",\n                   \"DOC6\", \"DOC7\", \"DOC8\", \"DOC9\", \"DOC10\"}\n# ----------------------------------------------------------\n# CHECK USERNAME\n# ----------------------------------------------------------\n@auth_bp.route(\"/check-username\", methods=[\"GET\"])\ndef check_username():\n    \"\"\"Verify if username is available\"\"\"\n    try:\n        username = request.args.get(\"username\", \"\").strip().lower()",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "otp_store",
+        "kind": 5,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "otp_store = {}\nEMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USER",
+        "kind": 5,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "EMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PASS",
+        "kind": 5,
+        "importPath": "backend.routes.auth_routes",
+        "description": "backend.routes.auth_routes",
+        "peekOfCode": "EMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,\nYour password reset OTP is: {otp}",
+        "detail": "backend.routes.auth_routes",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "backend.routes.contact_routes",
+        "description": "backend.routes.contact_routes",
+        "peekOfCode": "def contact():\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)\n    name = data.get(\"name\") if data else None\n    email = data.get(\"email\") if data else None\n    message = data.get(\"message\") if data else None\n    if not name or not email or not message:\n        return jsonify({\"error\": \"All fields are required\"}), 400\n    new_message = {",
+        "detail": "backend.routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "contact_bp",
+        "kind": 5,
+        "importPath": "backend.routes.contact_routes",
+        "description": "backend.routes.contact_routes",
+        "peekOfCode": "contact_bp = Blueprint(\"contact_bp\", __name__)\n# Get environment variables\nMONGODB_URI = os.getenv(\"MONGODB_URI\")\nFRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# Connect to MongoDB Atlas\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ncontact_collection = db[\"contact_messages\"]\n@contact_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])",
+        "detail": "backend.routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "MONGODB_URI",
+        "kind": 5,
+        "importPath": "backend.routes.contact_routes",
+        "description": "backend.routes.contact_routes",
+        "peekOfCode": "MONGODB_URI = os.getenv(\"MONGODB_URI\")\nFRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# Connect to MongoDB Atlas\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ncontact_collection = db[\"contact_messages\"]\n@contact_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef contact():\n    if request.method == \"OPTIONS\":",
+        "detail": "backend.routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "FRONTEND_ORIGIN",
+        "kind": 5,
+        "importPath": "backend.routes.contact_routes",
+        "description": "backend.routes.contact_routes",
+        "peekOfCode": "FRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# Connect to MongoDB Atlas\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ncontact_collection = db[\"contact_messages\"]\n@contact_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef contact():\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200",
+        "detail": "backend.routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "backend.routes.contact_routes",
+        "description": "backend.routes.contact_routes",
+        "peekOfCode": "client = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ncontact_collection = db[\"contact_messages\"]\n@contact_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef contact():\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)\n    name = data.get(\"name\") if data else None",
+        "detail": "backend.routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "backend.routes.contact_routes",
+        "description": "backend.routes.contact_routes",
+        "peekOfCode": "db = client[\"viadocsDB\"]\ncontact_collection = db[\"contact_messages\"]\n@contact_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef contact():\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)\n    name = data.get(\"name\") if data else None\n    email = data.get(\"email\") if data else None",
+        "detail": "backend.routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "contact_collection",
+        "kind": 5,
+        "importPath": "backend.routes.contact_routes",
+        "description": "backend.routes.contact_routes",
+        "peekOfCode": "contact_collection = db[\"contact_messages\"]\n@contact_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef contact():\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)\n    name = data.get(\"name\") if data else None\n    email = data.get(\"email\") if data else None\n    message = data.get(\"message\") if data else None",
+        "detail": "backend.routes.contact_routes",
+        "documentation": {}
+    },
+    {
+        "label": "early_access",
+        "kind": 2,
+        "importPath": "backend.routes.docai_routes",
+        "description": "backend.routes.docai_routes",
+        "peekOfCode": "def early_access():\n    # Handle browser preflight\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)\n    email = data.get(\"email\") if data else None\n    if not email:\n        return jsonify({\"error\": \"Email is required\"}), 400\n    # Prevent duplicate submissions\n    existing = docai_collection.find_one({\"email\": email})",
+        "detail": "backend.routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "docai_bp",
+        "kind": 5,
+        "importPath": "backend.routes.docai_routes",
+        "description": "backend.routes.docai_routes",
+        "peekOfCode": "docai_bp = Blueprint(\"docai_bp\", __name__)\n# Environment values\nMONGODB_URI = os.getenv(\"MONGODB_URI\")\nFRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# MongoDB connection\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ndocai_collection = db[\"docai_requests\"]\n# ✅ FIXED ROUTE (no duplicate prefix)\n@docai_bp.route(\"/early-access\", methods=[\"POST\", \"OPTIONS\"])",
+        "detail": "backend.routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "MONGODB_URI",
+        "kind": 5,
+        "importPath": "backend.routes.docai_routes",
+        "description": "backend.routes.docai_routes",
+        "peekOfCode": "MONGODB_URI = os.getenv(\"MONGODB_URI\")\nFRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# MongoDB connection\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ndocai_collection = db[\"docai_requests\"]\n# ✅ FIXED ROUTE (no duplicate prefix)\n@docai_bp.route(\"/early-access\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef early_access():",
+        "detail": "backend.routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "FRONTEND_ORIGIN",
+        "kind": 5,
+        "importPath": "backend.routes.docai_routes",
+        "description": "backend.routes.docai_routes",
+        "peekOfCode": "FRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# MongoDB connection\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ndocai_collection = db[\"docai_requests\"]\n# ✅ FIXED ROUTE (no duplicate prefix)\n@docai_bp.route(\"/early-access\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef early_access():\n    # Handle browser preflight",
+        "detail": "backend.routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "backend.routes.docai_routes",
+        "description": "backend.routes.docai_routes",
+        "peekOfCode": "client = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\ndocai_collection = db[\"docai_requests\"]\n# ✅ FIXED ROUTE (no duplicate prefix)\n@docai_bp.route(\"/early-access\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef early_access():\n    # Handle browser preflight\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200",
+        "detail": "backend.routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "backend.routes.docai_routes",
+        "description": "backend.routes.docai_routes",
+        "peekOfCode": "db = client[\"viadocsDB\"]\ndocai_collection = db[\"docai_requests\"]\n# ✅ FIXED ROUTE (no duplicate prefix)\n@docai_bp.route(\"/early-access\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef early_access():\n    # Handle browser preflight\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)",
+        "detail": "backend.routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "docai_collection",
+        "kind": 5,
+        "importPath": "backend.routes.docai_routes",
+        "description": "backend.routes.docai_routes",
+        "peekOfCode": "docai_collection = db[\"docai_requests\"]\n# ✅ FIXED ROUTE (no duplicate prefix)\n@docai_bp.route(\"/early-access\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\ndef early_access():\n    # Handle browser preflight\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)\n    email = data.get(\"email\") if data else None",
+        "detail": "backend.routes.docai_routes",
+        "documentation": {}
+    },
+    {
+        "label": "allowed_file",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def allowed_file(filename):\n    \"\"\"Check allowed image extensions\"\"\"\n    return \".\" in filename and filename.rsplit(\".\", 1)[1].lower() in ALLOWED_EXTENSIONS\n# ----------------------------------------------------------\n# CHECK DOCUMENT NAME\n# ----------------------------------------------------------\n@docs_bp.route(\"/check-name\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[\"http://localhost:3000\"], supports_credentials=True)\n@jwt_required()\ndef check_doc_name():",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "check_doc_name",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def check_doc_name():\n    \"\"\"Check if a document name already exists for this user\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        data = request.get_json() or {}\n        name = data.get(\"name\", \"\").strip()\n        if not name:\n            return jsonify({\"exists\": False, \"message\": \"Name is required\"}), 400\n        exists = db.documents.find_one({\"user_id\": user_id, \"name\": name}) is not None",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "create_doc",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def create_doc():\n    \"\"\"Create a new document for the logged-in user\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        data = request.get_json() or {}\n        name = data.get(\"name\", \"\").strip()\n        content = data.get(\"content\", \"\")\n        favorite = data.get(\"favorite\", False)\n        if not name:",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_docs",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def get_user_docs():\n    \"\"\"Return all documents for logged-in user\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        docs = list(db.documents.find({\"user_id\": user_id}).sort(\"updated_at\", -1))\n        for d in docs:\n            d[\"_id\"] = str(d[\"_id\"])\n            d[\"created_at\"] = d.get(\"created_at\", datetime.utcnow()).isoformat()\n            d[\"updated_at\"] = d.get(\"updated_at\", datetime.utcnow()).isoformat()",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_single_doc",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def get_single_doc(doc_id):\n    \"\"\"Return a single document for a user\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        doc = db.documents.find_one({\"_id\": ObjectId(doc_id), \"user_id\": user_id})\n        if not doc:\n            return jsonify({\"message\": \"Document not found\"}), 404\n        doc[\"_id\"] = str(doc[\"_id\"])\n        return jsonify(doc), 200",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_doc",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def update_doc(doc_id):\n    \"\"\"Update document name/content/favorite\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        data = request.get_json() or {}\n        update_data = {\n            \"name\": data.get(\"name\"),\n            \"content\": data.get(\"content\"),\n            \"favorite\": data.get(\"favorite\", False),",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_doc",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def delete_doc(doc_id):\n    \"\"\"Delete a user’s document\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        result = db.documents.delete_one({\"_id\": ObjectId(doc_id), \"user_id\": user_id})\n        if result.deleted_count == 0:\n            return jsonify({\"message\": \"Document not found\"}), 404\n        return jsonify({\"message\": \"Document deleted\"}), 200\n    except Exception as e:",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "toggle_favorite",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def toggle_favorite(doc_id):\n    \"\"\"Toggle favorite status for a document\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        doc = db.documents.find_one({\"_id\": ObjectId(doc_id), \"user_id\": user_id})\n        if not doc:\n            return jsonify({\"message\": \"Document not found\"}), 404\n        new_status = not doc.get(\"favorite\", False)\n        # Ensure we only update the document if it belongs to the logged-in user",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def upload_image():\n    \"\"\"Upload document image and return public URL\"\"\"\n    try:\n        if \"image\" not in request.files:\n            return jsonify({\"error\": \"No file provided\"}), 400\n        file = request.files[\"image\"]\n        if file.filename == \"\":\n            return jsonify({\"error\": \"Empty filename\"}), 400\n        if not allowed_file(file.filename):\n            return jsonify({\"error\": \"Invalid file type\"}), 400",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "home_summary",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def home_summary():\n    \"\"\"Return summary info for dashboard\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        total_docs = db.documents.count_documents({\"user_id\": user_id})\n        favorite_count = db.documents.count_documents({\"user_id\": user_id, \"favorite\": True})\n        recent_docs = list(\n            db.documents.find({\"user_id\": user_id})\n            .sort(\"updated_at\", -1)",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "def register():\n    \"\"\"Register a new user: expects JSON { email, password, name }\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json() or {}\n        email = (data.get(\"email\") or \"\").strip().lower()\n        password = data.get(\"password\") or \"\"\n        name = (data.get(\"name\") or \"\").strip()\n        if not email:\n            return jsonify({\"message\": \"Email is required\"}), 400",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "docs_bp",
+        "kind": 5,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "docs_bp = Blueprint(\"docs_bp\", __name__)\n# ----------------------------------------------------------\n# CONFIG\n# ----------------------------------------------------------\nALLOWED_EXTENSIONS = {\"png\", \"jpg\", \"jpeg\", \"gif\", \"webp\"}\ndef allowed_file(filename):\n    \"\"\"Check allowed image extensions\"\"\"\n    return \".\" in filename and filename.rsplit(\".\", 1)[1].lower() in ALLOWED_EXTENSIONS\n# ----------------------------------------------------------\n# CHECK DOCUMENT NAME",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_EXTENSIONS",
+        "kind": 5,
+        "importPath": "backend.routes.docs_routes",
+        "description": "backend.routes.docs_routes",
+        "peekOfCode": "ALLOWED_EXTENSIONS = {\"png\", \"jpg\", \"jpeg\", \"gif\", \"webp\"}\ndef allowed_file(filename):\n    \"\"\"Check allowed image extensions\"\"\"\n    return \".\" in filename and filename.rsplit(\".\", 1)[1].lower() in ALLOWED_EXTENSIONS\n# ----------------------------------------------------------\n# CHECK DOCUMENT NAME\n# ----------------------------------------------------------\n@docs_bp.route(\"/check-name\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[\"http://localhost:3000\"], supports_credentials=True)\n@jwt_required()",
+        "detail": "backend.routes.docs_routes",
+        "documentation": {}
+    },
+    {
+        "label": "feedback",
+        "kind": 2,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "def feedback():\n    # Handle preflight request (CORS)\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)\n    message = data.get(\"message\") if data else None\n    rating = data.get(\"rating\") if data else None\n    if not message:\n        return jsonify({\"error\": \"Feedback message is required\"}), 400\n    # 🔐 Try to identify user via JWT",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "feedback_bp",
+        "kind": 5,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "feedback_bp = Blueprint(\"feedback_bp\", __name__)\n# Environment variables\nMONGODB_URI = os.getenv(\"MONGODB_URI\")\nFRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# MongoDB connection\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\nfeedback_collection = db[\"feedbacks\"]\nusers_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "MONGODB_URI",
+        "kind": 5,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "MONGODB_URI = os.getenv(\"MONGODB_URI\")\nFRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# MongoDB connection\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\nfeedback_collection = db[\"feedbacks\"]\nusers_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)\n@feedback_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "FRONTEND_ORIGIN",
+        "kind": 5,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "FRONTEND_ORIGIN = os.getenv(\"FRONTEND_ORIGIN\", \"http://localhost:3000\")\n# MongoDB connection\nclient = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\nfeedback_collection = db[\"feedbacks\"]\nusers_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)\n@feedback_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\n@jwt_required(optional=True)",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "client = MongoClient(MONGODB_URI)\ndb = client[\"viadocsDB\"]\nfeedback_collection = db[\"feedbacks\"]\nusers_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)\n@feedback_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\n@jwt_required(optional=True)\ndef feedback():\n    # Handle preflight request (CORS)",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "db = client[\"viadocsDB\"]\nfeedback_collection = db[\"feedbacks\"]\nusers_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)\n@feedback_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\n@jwt_required(optional=True)\ndef feedback():\n    # Handle preflight request (CORS)\n    if request.method == \"OPTIONS\":",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "feedback_collection",
+        "kind": 5,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "feedback_collection = db[\"feedbacks\"]\nusers_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)\n@feedback_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\n@jwt_required(optional=True)\ndef feedback():\n    # Handle preflight request (CORS)\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "users_collection",
+        "kind": 5,
+        "importPath": "backend.routes.feedback_routes",
+        "description": "backend.routes.feedback_routes",
+        "peekOfCode": "users_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)\n@feedback_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\n@jwt_required(optional=True)\ndef feedback():\n    # Handle preflight request (CORS)\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)",
+        "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_profile",
+        "kind": 2,
+        "importPath": "backend.routes.user_routes",
+        "description": "backend.routes.user_routes",
+        "peekOfCode": "def get_profile():\n    \"\"\"Fetch user profile details\"\"\"\n    db = current_app.db\n    user_id = get_jwt_identity()\n    user = db.users.find_one({\"_id\": ObjectId(user_id)}, {\"password\": 0})\n    if not user:\n        return jsonify({\"message\": \"User not found\"}), 404\n    return jsonify({\n        \"id\": str(user[\"_id\"]),\n        \"username\": user.get(\"username\", \"\"),",
+        "detail": "backend.routes.user_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_profile",
+        "kind": 2,
+        "importPath": "backend.routes.user_routes",
+        "description": "backend.routes.user_routes",
+        "peekOfCode": "def update_profile():\n    \"\"\"Update profile fields (name, DOB, etc.)\"\"\"\n    db = current_app.db\n    user_id = get_jwt_identity()\n    data = request.get_json()\n    update_fields = {}\n    if \"firstName\" in data:\n        update_fields[\"first_name\"] = data[\"firstName\"]\n    if \"lastName\" in data:\n        update_fields[\"last_name\"] = data[\"lastName\"]",
+        "detail": "backend.routes.user_routes",
+        "documentation": {}
+    },
+    {
+        "label": "upload_profile_image",
+        "kind": 2,
+        "importPath": "backend.routes.user_routes",
+        "description": "backend.routes.user_routes",
+        "peekOfCode": "def upload_profile_image():\n    \"\"\"Upload and save profile picture to /uploads/profile_images\"\"\"\n    db = current_app.db\n    user_id = get_jwt_identity()\n    if \"profileImage\" not in request.files:\n        return jsonify({\"message\": \"No file provided\"}), 400\n    file = request.files[\"profileImage\"]\n    if file.filename == \"\":\n        return jsonify({\"message\": \"Empty filename\"}), 400\n    # ✅ Save to uploads/profile_images folder",
+        "detail": "backend.routes.user_routes",
+        "documentation": {}
+    },
+    {
+        "label": "set_role",
+        "kind": 2,
+        "importPath": "backend.routes.user_routes",
+        "description": "backend.routes.user_routes",
+        "peekOfCode": "def set_role():\n    \"\"\"Save user type (Student / Employee)\"\"\"\n    db = current_app.db\n    user_id = get_jwt_identity()\n    data = request.get_json()\n    role = data.get(\"role\")\n    if role not in [\"student\", \"employee\"]:\n        return jsonify({\"error\": \"Invalid role\"}), 400\n    db.users.update_one({\"_id\": ObjectId(user_id)}, {\"$set\": {\"role\": role}})\n    return jsonify({\"message\": \"Role saved successfully\", \"role\": role}), 200",
+        "detail": "backend.routes.user_routes",
+        "documentation": {}
+    },
+    {
+        "label": "user_bp",
+        "kind": 5,
+        "importPath": "backend.routes.user_routes",
+        "description": "backend.routes.user_routes",
+        "peekOfCode": "user_bp = Blueprint(\"user_bp\", __name__)\n# ---------------------- GET PROFILE ----------------------\n@user_bp.route(\"/profile\", methods=[\"GET\", \"OPTIONS\"])\n@cross_origin(origins=[\"http://localhost:3000\"], supports_credentials=True)\n@jwt_required()\ndef get_profile():\n    \"\"\"Fetch user profile details\"\"\"\n    db = current_app.db\n    user_id = get_jwt_identity()\n    user = db.users.find_one({\"_id\": ObjectId(user_id)}, {\"password\": 0})",
+        "detail": "backend.routes.user_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "backend.utils.db",
+        "description": "backend.utils.db",
+        "peekOfCode": "def get_db():\n    \"\"\"\n    Safely returns the connected MongoDB database instance from Flask app.\n    \"\"\"\n    try:\n        db = getattr(current_app, \"db\", None)\n        # ✅ Compare correctly (MongoDB objects don't support bool())\n        if db is None:\n            raise Exception(\"Database not initialized in Flask app\")\n        return db",
+        "detail": "backend.utils.db",
+        "documentation": {}
+    },
+    {
+        "label": "libreoffice_convert",
+        "kind": 2,
+        "importPath": "backend.utils.libreoffice_convert",
+        "description": "backend.utils.libreoffice_convert",
+        "peekOfCode": "def libreoffice_convert(input_path, output_dir, output_format):\n    \"\"\"\n    Convert documents using LibreOffice in headless mode.\n    Automatically picks correct filters for better accuracy.\n    \"\"\"\n    try:\n        # 🧠 Step 1: Choose the right conversion filter\n        if output_format == \"docx\":\n            # PDF → DOCX\n            convert_filter = \"docx:MS Word 2007 XML\"",
+        "detail": "backend.utils.libreoffice_convert",
+        "documentation": {}
+    },
+    {
+        "label": "generate_otp",
+        "kind": 2,
+        "importPath": "backend.utils.otp",
+        "description": "backend.utils.otp",
+        "peekOfCode": "def generate_otp():\n    \"\"\"Generate a 4-digit OTP\"\"\"\n    return str(random.randint(1000, 9999))\ndef send_otp_email(receiver_email, otp):\n    \"\"\"Send OTP via Gmail\"\"\"\n    try:\n        msg = MIMEText(f\"Your Viadocs password reset OTP is: {otp}\")\n        msg[\"Subject\"] = \"Viadocs - Password Reset OTP\"\n        msg[\"From\"] = SENDER_EMAIL\n        msg[\"To\"] = receiver_email",
+        "detail": "backend.utils.otp",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp_email",
+        "kind": 2,
+        "importPath": "backend.utils.otp",
+        "description": "backend.utils.otp",
+        "peekOfCode": "def send_otp_email(receiver_email, otp):\n    \"\"\"Send OTP via Gmail\"\"\"\n    try:\n        msg = MIMEText(f\"Your Viadocs password reset OTP is: {otp}\")\n        msg[\"Subject\"] = \"Viadocs - Password Reset OTP\"\n        msg[\"From\"] = SENDER_EMAIL\n        msg[\"To\"] = receiver_email\n        with smtplib.SMTP(\"smtp.gmail.com\", 587) as server:\n            server.starttls()\n            server.login(SENDER_EMAIL, SENDER_PASS)",
+        "detail": "backend.utils.otp",
+        "documentation": {}
+    },
+    {
+        "label": "SENDER_EMAIL",
+        "kind": 5,
+        "importPath": "backend.utils.otp",
+        "description": "backend.utils.otp",
+        "peekOfCode": "SENDER_EMAIL = os.getenv(\"EMAIL_USER\")\nSENDER_PASS = os.getenv(\"EMAIL_PASS\")\ndef generate_otp():\n    \"\"\"Generate a 4-digit OTP\"\"\"\n    return str(random.randint(1000, 9999))\ndef send_otp_email(receiver_email, otp):\n    \"\"\"Send OTP via Gmail\"\"\"\n    try:\n        msg = MIMEText(f\"Your Viadocs password reset OTP is: {otp}\")\n        msg[\"Subject\"] = \"Viadocs - Password Reset OTP\"",
+        "detail": "backend.utils.otp",
+        "documentation": {}
+    },
+    {
+        "label": "SENDER_PASS",
+        "kind": 5,
+        "importPath": "backend.utils.otp",
+        "description": "backend.utils.otp",
+        "peekOfCode": "SENDER_PASS = os.getenv(\"EMAIL_PASS\")\ndef generate_otp():\n    \"\"\"Generate a 4-digit OTP\"\"\"\n    return str(random.randint(1000, 9999))\ndef send_otp_email(receiver_email, otp):\n    \"\"\"Send OTP via Gmail\"\"\"\n    try:\n        msg = MIMEText(f\"Your Viadocs password reset OTP is: {otp}\")\n        msg[\"Subject\"] = \"Viadocs - Password Reset OTP\"\n        msg[\"From\"] = SENDER_EMAIL",
+        "detail": "backend.utils.otp",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "backend.utils.security",
+        "description": "backend.utils.security",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return bcrypt.hashpw(password.encode(\"utf-8\"), bcrypt.gensalt()).decode(\"utf-8\")\ndef check_password(password: str, hashed: str) -> bool:\n    return bcrypt.checkpw(password.encode(\"utf-8\"), hashed.encode(\"utf-8\"))",
+        "detail": "backend.utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_password",
+        "kind": 2,
+        "importPath": "backend.utils.security",
+        "description": "backend.utils.security",
+        "peekOfCode": "def check_password(password: str, hashed: str) -> bool:\n    return bcrypt.checkpw(password.encode(\"utf-8\"), hashed.encode(\"utf-8\"))",
+        "detail": "backend.utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "Tee",
+        "kind": 6,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "class Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except OSError:\n                pass\n        tee_f.write(what)",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_root_hkey",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU\n        return winreg.HKEY_CURRENT_USER",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "create_shortcut",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def create_shortcut(\n    path, description, filename, arguments=\"\", workdir=\"\", iconpath=\"\", iconindex=0\n):\n    import pythoncom\n    from win32com.shell import shell\n    ilink = pythoncom.CoCreateInstance(\n        shell.CLSID_ShellLink,\n        None,\n        pythoncom.CLSCTX_INPROC_SERVER,\n        shell.IID_IShellLink,",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_special_folder_path",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_special_folder_path(path_name):\n    from win32com.shell import shell, shellcon\n    for maybe in \"\"\"\n        CSIDL_COMMON_STARTMENU CSIDL_STARTMENU CSIDL_COMMON_APPDATA\n        CSIDL_LOCAL_APPDATA CSIDL_APPDATA CSIDL_COMMON_DESKTOPDIRECTORY\n        CSIDL_DESKTOPDIRECTORY CSIDL_COMMON_STARTUP CSIDL_STARTUP\n        CSIDL_COMMON_PROGRAMS CSIDL_PROGRAMS CSIDL_PROGRAM_FILES_COMMON\n        CSIDL_PROGRAM_FILES CSIDL_FONTS\"\"\".split():\n        if maybe == path_name:\n            csidl = getattr(shellcon, maybe)",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "CopyTo",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def CopyTo(desc, src, dest):\n    import win32api\n    import win32con\n    while 1:\n        try:\n            win32api.CopyFile(src, dest, 0)\n            return\n        except win32api.error as details:\n            if details.winerror == 5:  # access denied - user not admin.\n                raise",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "LoadSystemModule",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def LoadSystemModule(lib_dir, modname):\n    # See if this is a debug build.\n    import importlib.machinery\n    import importlib.util\n    suffix = \"_d\" if \"_d.pyd\" in importlib.machinery.EXTENSION_SUFFIXES else \"\"\n    filename = \"%s%d%d%s.dll\" % (\n        modname,\n        sys.version_info.major,\n        sys.version_info.minor,\n        suffix,",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "SetPyKeyVal",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def SetPyKeyVal(key_name, value_name, value):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.CreateKey(root_key, key_name)\n        try:\n            winreg.SetValueEx(my_key, value_name, 0, winreg.REG_SZ, value)\n            if verbose:\n                print(f\"-> {root_key_name}\\\\{key_name}[{value_name}]={value!r}\")\n        finally:",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "UnsetPyKeyVal",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def UnsetPyKeyVal(key_name, value_name, delete_key=False):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.OpenKey(root_key, key_name, 0, winreg.KEY_SET_VALUE)\n        try:\n            winreg.DeleteValue(my_key, value_name)\n            if verbose:\n                print(f\"-> DELETE {root_key_name}\\\\{key_name}[{value_name}]\")\n        finally:",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterCOMObjects",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterCOMObjects(register=True):\n    import win32com.server.register\n    if register:\n        func = win32com.server.register.RegisterClasses\n    else:\n        func = win32com.server.register.UnregisterClasses\n    flags = {}\n    if not verbose:\n        flags[\"quiet\"] = 1\n    for module, klass_name in com_modules:",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterHelpFile",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterHelpFile(register=True, lib_dir=None):\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    if register:\n        # Register the .chm help file.\n        chm_file = os.path.join(lib_dir, \"PyWin32.chm\")\n        if os.path.isfile(chm_file):\n            # This isn't recursive, so if 'Help' doesn't exist, we croak\n            SetPyKeyVal(\"Help\", None, None)\n            SetPyKeyVal(\"Help\\\\Pythonwin Reference\", None, chm_file)",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterPythonwin",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterPythonwin(register=True, lib_dir=None):\n    \"\"\"Add (or remove) Pythonwin to context menu for python scripts.\n    ??? Should probably also add Edit command for pys files also.\n    Also need to remove these keys on uninstall, but there's no function\n    to add registry entries to uninstall log ???\n    \"\"\"\n    import os\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    classes_root = get_root_hkey()",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_shortcuts_folder",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_shortcuts_folder():\n    if get_root_hkey() == winreg.HKEY_LOCAL_MACHINE:\n        try:\n            fldr = get_special_folder_path(\"CSIDL_COMMON_PROGRAMS\")\n        except OSError:\n            # No CSIDL_COMMON_PROGRAMS on this platform\n            fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")\n    else:\n        # non-admin install - always goes in this user's start menu.\n        fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_system_dir",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_system_dir():\n    import win32api  # we assume this exists.\n    try:\n        import pythoncom\n        import win32process\n        from win32com.shell import shell, shellcon\n        try:\n            if win32process.IsWow64Process():\n                return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEMX86)\n            return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEM)",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "fixup_dbi",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def fixup_dbi():\n    # We used to have a dbi.pyd with our .pyd files, but now have a .py file.\n    # If the user didn't uninstall, they will find the .pyd which will cause\n    # problems - so handle that.\n    import win32api\n    import win32con\n    pyd_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi.pyd\")\n    pyd_d_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi_d.pyd\")\n    py_name = os.path.join(os.path.dirname(win32con.__file__), \"dbi.py\")\n    for this_pyd in (pyd_name, pyd_d_name):",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def install(lib_dir):\n    import traceback\n    # The .pth file is now installed as a regular file.\n    # Create the .pth file in the site-packages dir, and use only relative paths\n    # We used to write a .pth directly to sys.prefix - clobber it.\n    if os.path.isfile(os.path.join(sys.prefix, \"pywin32.pth\")):\n        os.unlink(os.path.join(sys.prefix, \"pywin32.pth\"))\n    # The .pth may be new and therefore not loaded in this session.\n    # Setup the paths just in case.\n    for name in \"win32 win32\\\\lib Pythonwin\".split():",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def uninstall(lib_dir):\n    # First ensure our system modules are loaded from pywin32_system, so\n    # we can remove the ones we copied...\n    LoadSystemModule(lib_dir, \"pywintypes\")\n    LoadSystemModule(lib_dir, \"pythoncom\")\n    try:\n        RegisterCOMObjects(False)\n    except Exception as why:\n        print(f\"Failed to unregister COM objects: {why}\")\n    try:",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verify_destination",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def verify_destination(location: str) -> str:\n    location = os.path.abspath(location)\n    if not os.path.isdir(location):\n        raise argparse.ArgumentTypeError(\n            f'Path \"{location}\" is not an existing directory!'\n        )\n    return location\ndef main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python -m pywin32_postinstall -install\n    * or (shorter but you don't have control over which python environment is used)\n    > pywin32_postinstall -install\n    You need to execute this script, with a '-install' parameter,\n    to ensure the environment is setup correctly to install COM objects, services, etc.",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "tee_f",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "tee_f = open(\n    os.path.join(\n        tempfile.gettempdir(),  # Send output somewhere so it can be found if necessary...\n        \"pywin32_postinstall.log\",\n    ),\n    \"w\",\n)\nclass Tee:\n    def __init__(self, file):\n        self.f = file",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stderr",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stderr = Tee(sys.stderr)\nsys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stdout",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "com_modules",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "com_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0\n# Verbosity of output messages.",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "silent",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "silent = 0\n# Verbosity of output messages.\nverbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "verbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "root_key_name",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_postinstall",
+        "description": "backend.venv312.Scripts.pywin32_postinstall",
+        "peekOfCode": "root_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU",
+        "detail": "backend.venv312.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "run_test",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_testall",
+        "description": "backend.venv312.Scripts.pywin32_testall",
+        "peekOfCode": "def run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()\n    result = subprocess.run(cmd, check=False, cwd=dirname)\n    print(f\"*** Test script '{script}' exited with {result.returncode}\")\n    sys.stdout.flush()\n    if result.returncode:",
+        "detail": "backend.venv312.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "find_and_run",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_testall",
+        "description": "backend.venv312.Scripts.pywin32_testall",
+        "peekOfCode": "def find_and_run(possible_locations, extras):\n    for maybe in possible_locations:\n        if os.path.isfile(maybe):\n            run_test(maybe, extras)\n            break\n    else:\n        raise RuntimeError(\n            \"Failed to locate a test script in one of %s\" % possible_locations\n        )\ndef main():",
+        "detail": "backend.venv312.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.venv312.Scripts.pywin32_testall",
+        "description": "backend.venv312.Scripts.pywin32_testall",
+        "peekOfCode": "def main():\n    import argparse\n    code_directories = [project_root] + site_packages\n    parser = argparse.ArgumentParser(\n        description=\"A script to trigger tests in all subprojects of PyWin32.\"\n    )\n    parser.add_argument(\n        \"-no-user-interaction\",\n        default=False,\n        action=\"store_true\",",
+        "detail": "backend.venv312.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_testall",
+        "description": "backend.venv312.Scripts.pywin32_testall",
+        "peekOfCode": "project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))\nsite_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras",
+        "detail": "backend.venv312.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "site_packages",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_testall",
+        "description": "backend.venv312.Scripts.pywin32_testall",
+        "peekOfCode": "site_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)",
+        "detail": "backend.venv312.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "failures",
+        "kind": 5,
+        "importPath": "backend.venv312.Scripts.pywin32_testall",
+        "description": "backend.venv312.Scripts.pywin32_testall",
+        "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
+        "detail": "backend.venv312.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "health",
+        "kind": 2,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "def health():\n    \"\"\"Simple API health check\"\"\"\n    return jsonify({\n        \"status\": \"ok\",\n        \"db_connected\": bool(app.db)\n    }), 200\n# ✅ Serve Uploaded Files\n@app.route(\"/uploads/<folder>/<path:filename>\")\ndef serve_uploads(folder, filename):\n    \"\"\"Serve static uploaded files (profile, docs, temp)\"\"\"",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "serve_uploads",
+        "kind": 2,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "def serve_uploads(folder, filename):\n    \"\"\"Serve static uploaded files (profile, docs, temp)\"\"\"\n    valid_folders = [\"profile_images\", \"doc_images\", \"pdf-to-word\", \"temp\"]\n    if folder not in valid_folders:\n        return jsonify({\"error\": \"Invalid folder\"}), 400\n    upload_path = os.path.join(app.root_path, \"uploads\", folder)\n    file_path = os.path.join(upload_path, filename)\n    if not os.path.exists(file_path):\n        return jsonify({\"error\": \"File not found\"}), 404\n    return send_from_directory(upload_path, filename)",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "app = Flask(__name__)\n# ✅ Enable CORS for frontend communication\nCORS(\n    app,\n    resources={r\"/api/*\": {\"origins\": \"http://localhost:3000\"}},\n    supports_credentials=True\n)\n# ✅ JWT Config\napp.config[\"JWT_SECRET_KEY\"] = os.getenv(\"JWT_SECRET_KEY\", \"viadocs_jwt_secret\")\njwt = JWTManager(app)",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"JWT_SECRET_KEY\"]",
+        "kind": 5,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "app.config[\"JWT_SECRET_KEY\"] = os.getenv(\"JWT_SECRET_KEY\", \"viadocs_jwt_secret\")\njwt = JWTManager(app)\n# ✅ MongoDB Connection\ntry:\n    client = MongoClient(os.getenv(\"MONGODB_URI\"))\n    db = client[\"viadocsDB\"]\n    app.db = db\n    print(\"✅ Connected to MongoDB Atlas successfully!\")\nexcept Exception as e:\n    print(\"❌ MongoDB Connection Failed:\", e)",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 5,
+        "importPath": "backend.app",
+        "description": "backend.app",
+        "peekOfCode": "jwt = JWTManager(app)\n# ✅ MongoDB Connection\ntry:\n    client = MongoClient(os.getenv(\"MONGODB_URI\"))\n    db = client[\"viadocsDB\"]\n    app.db = db\n    print(\"✅ Connected to MongoDB Atlas successfully!\")\nexcept Exception as e:\n    print(\"❌ MongoDB Connection Failed:\", e)\n    app.db = None",
+        "detail": "backend.app",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    }
+]

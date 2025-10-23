@@ -11,7 +11,7 @@ UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "pdf-merge")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
-@pdf_merge_bp.route("/api/tools/pdf-merge", methods=["POST"])
+@pdf_merge_bp.route("", methods=["POST"])
 def merge_pdfs():
     """
     Merge multiple PDF files into one.
@@ -35,13 +35,13 @@ def merge_pdfs():
             file.save(file_path)
             merger.append(file_path)
 
-        # ✅ Step 3: Write the merged output to memory
+        # ✅ Step 3: Write merged output to memory
         output_stream = io.BytesIO()
         merger.write(output_stream)
         merger.close()
         output_stream.seek(0)
 
-        # ✅ Step 4: Optionally save merged PDF for records
+        # ✅ Step 4: Optionally save for records
         merged_path = os.path.join(UPLOAD_FOLDER, "merged_output.pdf")
         with open(merged_path, "wb") as f:
             f.write(output_stream.getbuffer())

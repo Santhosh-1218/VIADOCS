@@ -360,6 +360,38 @@
         "documentation": {}
     },
     {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "current_app",
         "importPath": "flask",
         "description": "flask",
@@ -634,14 +666,6 @@
         "importPath": "io",
         "description": "io",
         "detail": "io",
-        "documentation": {}
-    },
-    {
-        "label": "secure_filename",
-        "importPath": "werkzeug.utils",
-        "description": "werkzeug.utils",
-        "isExtraImport": true,
-        "detail": "werkzeug.utils",
         "documentation": {}
     },
     {
@@ -1225,7 +1249,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.excel_to_pdf_routes",
         "description": "backend.routes.tools.excel_to_pdf_routes",
-        "peekOfCode": "excel_to_pdf_bp = Blueprint(\"excel_to_pdf_bp\", __name__)\n# Folder for converted PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"excel-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@excel_to_pdf_bp.route(\"/api/tools/excel-to-pdf\", methods=[\"POST\"])\ndef convert_excel_to_pdf():\n    \"\"\"\n    Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:",
+        "peekOfCode": "excel_to_pdf_bp = Blueprint(\"excel_to_pdf_bp\", __name__)\n# Folder for converted PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"excel-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@excel_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef convert_excel_to_pdf():\n    \"\"\"\n    Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:",
         "detail": "backend.routes.tools.excel_to_pdf_routes",
         "documentation": {}
     },
@@ -1234,7 +1258,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.excel_to_pdf_routes",
         "description": "backend.routes.tools.excel_to_pdf_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"excel-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@excel_to_pdf_bp.route(\"/api/tools/excel-to-pdf\", methods=[\"POST\"])\ndef convert_excel_to_pdf():\n    \"\"\"\n    Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"excel-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@excel_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef convert_excel_to_pdf():\n    \"\"\"\n    Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
         "detail": "backend.routes.tools.excel_to_pdf_routes",
         "documentation": {}
     },
@@ -1252,7 +1276,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.image_to_pdf_routes",
         "description": "backend.routes.tools.image_to_pdf_routes",
-        "peekOfCode": "image_to_pdf_bp = Blueprint(\"image_to_pdf_bp\", __name__)\n# --- Upload folder setup ---\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"image-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@image_to_pdf_bp.route(\"/api/tools/image-to-pdf\", methods=[\"POST\"])\ndef image_to_pdf():\n    \"\"\"\n    Convert multiple uploaded images into a single PDF file.\n    \"\"\"\n    try:",
+        "peekOfCode": "image_to_pdf_bp = Blueprint(\"image_to_pdf_bp\", __name__)\n# --- Upload folder setup ---\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"image-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@image_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef image_to_pdf():\n    \"\"\"\n    Convert multiple uploaded images into a single PDF file.\n    \"\"\"\n    try:",
         "detail": "backend.routes.tools.image_to_pdf_routes",
         "documentation": {}
     },
@@ -1261,25 +1285,16 @@
         "kind": 5,
         "importPath": "backend.routes.tools.image_to_pdf_routes",
         "description": "backend.routes.tools.image_to_pdf_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"image-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@image_to_pdf_bp.route(\"/api/tools/image-to-pdf\", methods=[\"POST\"])\ndef image_to_pdf():\n    \"\"\"\n    Convert multiple uploaded images into a single PDF file.\n    \"\"\"\n    try:\n        # ✅ Check for uploaded images\n        if \"images\" not in request.files:",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"image-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@image_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef image_to_pdf():\n    \"\"\"\n    Convert multiple uploaded images into a single PDF file.\n    \"\"\"\n    try:\n        # ✅ Check for uploaded images\n        if \"images\" not in request.files:",
         "detail": "backend.routes.tools.image_to_pdf_routes",
         "documentation": {}
     },
     {
-        "label": "allowed_file",
+        "label": "check_lock_status",
         "kind": 2,
         "importPath": "backend.routes.tools.password_protect_routes",
         "description": "backend.routes.tools.password_protect_routes",
-        "peekOfCode": "def allowed_file(filename: str):\n    _, ext = os.path.splitext(filename.lower())\n    return ext in ALLOWED_EXT\n@password_protect_bp.route(\"/unlock-pdf/check\", methods=[\"POST\"])\ndef check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile\n    Returns: JSON { locked: bool, message: str }\n    \"\"\"",
-        "detail": "backend.routes.tools.password_protect_routes",
-        "documentation": {}
-    },
-    {
-        "label": "check_pdf_lock",
-        "kind": 2,
-        "importPath": "backend.routes.tools.password_protect_routes",
-        "description": "backend.routes.tools.password_protect_routes",
-        "peekOfCode": "def check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile\n    Returns: JSON { locked: bool, message: str }\n    \"\"\"\n    file = request.files.get(\"pdfFile\")\n    if not file:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    filename = secure_filename(file.filename)",
+        "peekOfCode": "def check_lock_status():\n    \"\"\"\n    Check whether the uploaded PDF is locked or unlocked.\n    \"\"\"\n    if \"pdfFile\" not in request.files:\n        return jsonify({\"message\": \"No PDF uploaded\"}), 400\n    pdf_file = request.files[\"pdfFile\"]\n    temp_path = os.path.join(UPLOAD_FOLDER, pdf_file.filename)\n    pdf_file.save(temp_path)\n    try:",
         "detail": "backend.routes.tools.password_protect_routes",
         "documentation": {}
     },
@@ -1288,16 +1303,7 @@
         "kind": 2,
         "importPath": "backend.routes.tools.password_protect_routes",
         "description": "backend.routes.tools.password_protect_routes",
-        "peekOfCode": "def password_protect():\n    \"\"\"\n    Add password to an unlocked PDF file.\n    Expects: form-data -> pdf (file), password (string)\n    Returns: protected PDF file (as blob)\n    \"\"\"\n    file = request.files.get(\"pdf\")\n    password = request.form.get(\"password\")\n    if not file or not password:\n        return jsonify({\"error\": \"Missing PDF or password\"}), 400",
-        "detail": "backend.routes.tools.password_protect_routes",
-        "documentation": {}
-    },
-    {
-        "label": "reset_pdf_password",
-        "kind": 2,
-        "importPath": "backend.routes.tools.password_protect_routes",
-        "description": "backend.routes.tools.password_protect_routes",
-        "peekOfCode": "def reset_pdf_password():\n    \"\"\"\n    Reset password for an already locked PDF file.\n    Expects: form-data -> pdf (file), oldPassword, newPassword\n    Returns: PDF file with updated password\n    \"\"\"\n    file = request.files.get(\"pdf\")\n    old_pw = request.form.get(\"oldPassword\")\n    new_pw = request.form.get(\"newPassword\")\n    if not file or not old_pw or not new_pw:",
+        "peekOfCode": "def password_protect():\n    \"\"\"\n    Protect an unlocked PDF with a new password.\n    \"\"\"\n    if \"pdf\" not in request.files or \"password\" not in request.form:\n        return jsonify({\"message\": \"Missing file or password\"}), 400\n    pdf_file = request.files[\"pdf\"]\n    password = request.form[\"password\"]\n    temp_input = os.path.join(UPLOAD_FOLDER, pdf_file.filename)\n    output_path = os.path.join(UPLOAD_FOLDER, f\"protected_{pdf_file.filename}\")",
         "detail": "backend.routes.tools.password_protect_routes",
         "documentation": {}
     },
@@ -1306,16 +1312,16 @@
         "kind": 5,
         "importPath": "backend.routes.tools.password_protect_routes",
         "description": "backend.routes.tools.password_protect_routes",
-        "peekOfCode": "password_protect_bp = Blueprint(\"password_protect_bp\", __name__, url_prefix=\"/api/tools\")\nALLOWED_EXT = {\".pdf\"}\ndef allowed_file(filename: str):\n    _, ext = os.path.splitext(filename.lower())\n    return ext in ALLOWED_EXT\n@password_protect_bp.route(\"/unlock-pdf/check\", methods=[\"POST\"])\ndef check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile",
+        "peekOfCode": "password_protect_bp = Blueprint(\"password_protect_bp\", __name__)\n# ✅ Upload folder\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"password-protect\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# ✅ Check if PDF is password-protected\n@password_protect_bp.route(\"/check\", methods=[\"POST\"])\ndef check_lock_status():\n    \"\"\"\n    Check whether the uploaded PDF is locked or unlocked.\n    \"\"\"",
         "detail": "backend.routes.tools.password_protect_routes",
         "documentation": {}
     },
     {
-        "label": "ALLOWED_EXT",
+        "label": "UPLOAD_FOLDER",
         "kind": 5,
         "importPath": "backend.routes.tools.password_protect_routes",
         "description": "backend.routes.tools.password_protect_routes",
-        "peekOfCode": "ALLOWED_EXT = {\".pdf\"}\ndef allowed_file(filename: str):\n    _, ext = os.path.splitext(filename.lower())\n    return ext in ALLOWED_EXT\n@password_protect_bp.route(\"/unlock-pdf/check\", methods=[\"POST\"])\ndef check_pdf_lock():\n    \"\"\"\n    Check if PDF is locked (encrypted) or unlocked.\n    Expects: form-data -> pdfFile\n    Returns: JSON { locked: bool, message: str }",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"password-protect\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# ✅ Check if PDF is password-protected\n@password_protect_bp.route(\"/check\", methods=[\"POST\"])\ndef check_lock_status():\n    \"\"\"\n    Check whether the uploaded PDF is locked or unlocked.\n    \"\"\"\n    if \"pdfFile\" not in request.files:\n        return jsonify({\"message\": \"No PDF uploaded\"}), 400",
         "detail": "backend.routes.tools.password_protect_routes",
         "documentation": {}
     },
@@ -1324,7 +1330,7 @@
         "kind": 2,
         "importPath": "backend.routes.tools.pdf_compress_routes",
         "description": "backend.routes.tools.pdf_compress_routes",
-        "peekOfCode": "def compress_pdf():\n    \"\"\"\n    Compress a PDF using Ghostscript.\n    Form-data: { file: <PDF>, mode: <extreme|recommended|low> }\n    \"\"\"\n    try:\n        # --- Validate file ---\n        if \"file\" not in request.files:\n            return jsonify({\"error\": \"No file uploaded\"}), 400\n        file = request.files[\"file\"]",
+        "peekOfCode": "def compress_pdf():\n    \"\"\"\n    Compress a PDF file using Ghostscript.\n    Expects multipart/form-data:\n    - file: PDF file\n    - mode: compression level (extreme / recommended / low)\n    \"\"\"\n    # --- Handle CORS preflight (OPTIONS) ---\n    if request.method == \"OPTIONS\":\n        return jsonify({\"message\": \"CORS Preflight OK\"}), 200",
         "detail": "backend.routes.tools.pdf_compress_routes",
         "documentation": {}
     },
@@ -1333,7 +1339,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_compress_routes",
         "description": "backend.routes.tools.pdf_compress_routes",
-        "peekOfCode": "pdf_compress_bp = Blueprint(\"pdf_compress_bp\", __name__)\n# Upload folder for temporary storage\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-compress\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_compress_bp.route(\"/api/tools/pdf/compress\", methods=[\"POST\"])\n@jwt_required()  # ✅ Require valid JWT (matches frontend header)\ndef compress_pdf():\n    \"\"\"\n    Compress a PDF using Ghostscript.\n    Form-data: { file: <PDF>, mode: <extreme|recommended|low> }",
+        "peekOfCode": "pdf_compress_bp = Blueprint(\"pdf_compress_bp\", __name__)\n# ✅ Folder for storing compressed files\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-compress\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_compress_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@jwt_required(optional=True)  # JWT optional for now (can be strict if you prefer)\ndef compress_pdf():\n    \"\"\"\n    Compress a PDF file using Ghostscript.\n    Expects multipart/form-data:",
         "detail": "backend.routes.tools.pdf_compress_routes",
         "documentation": {}
     },
@@ -1342,7 +1348,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_compress_routes",
         "description": "backend.routes.tools.pdf_compress_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-compress\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_compress_bp.route(\"/api/tools/pdf/compress\", methods=[\"POST\"])\n@jwt_required()  # ✅ Require valid JWT (matches frontend header)\ndef compress_pdf():\n    \"\"\"\n    Compress a PDF using Ghostscript.\n    Form-data: { file: <PDF>, mode: <extreme|recommended|low> }\n    \"\"\"\n    try:",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-compress\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_compress_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@jwt_required(optional=True)  # JWT optional for now (can be strict if you prefer)\ndef compress_pdf():\n    \"\"\"\n    Compress a PDF file using Ghostscript.\n    Expects multipart/form-data:\n    - file: PDF file\n    - mode: compression level (extreme / recommended / low)",
         "detail": "backend.routes.tools.pdf_compress_routes",
         "documentation": {}
     },
@@ -1360,7 +1366,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_merge_routes",
         "description": "backend.routes.tools.pdf_merge_routes",
-        "peekOfCode": "pdf_merge_bp = Blueprint(\"pdf_merge_bp\", __name__)\n# Folder for uploads\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-merge\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_merge_bp.route(\"/api/tools/pdf-merge\", methods=[\"POST\"])\ndef merge_pdfs():\n    \"\"\"\n    Merge multiple PDF files into one.\n    Expects multiple 'files' in form-data.\n    Returns a merged PDF blob.",
+        "peekOfCode": "pdf_merge_bp = Blueprint(\"pdf_merge_bp\", __name__)\n# Folder for uploads\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-merge\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_merge_bp.route(\"\", methods=[\"POST\"])\ndef merge_pdfs():\n    \"\"\"\n    Merge multiple PDF files into one.\n    Expects multiple 'files' in form-data.\n    Returns a merged PDF blob.",
         "detail": "backend.routes.tools.pdf_merge_routes",
         "documentation": {}
     },
@@ -1369,7 +1375,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_merge_routes",
         "description": "backend.routes.tools.pdf_merge_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-merge\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_merge_bp.route(\"/api/tools/pdf-merge\", methods=[\"POST\"])\ndef merge_pdfs():\n    \"\"\"\n    Merge multiple PDF files into one.\n    Expects multiple 'files' in form-data.\n    Returns a merged PDF blob.\n    \"\"\"\n    try:",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-merge\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_merge_bp.route(\"\", methods=[\"POST\"])\ndef merge_pdfs():\n    \"\"\"\n    Merge multiple PDF files into one.\n    Expects multiple 'files' in form-data.\n    Returns a merged PDF blob.\n    \"\"\"\n    try:",
         "detail": "backend.routes.tools.pdf_merge_routes",
         "documentation": {}
     },
@@ -1378,7 +1384,7 @@
         "kind": 2,
         "importPath": "backend.routes.tools.pdf_split_routes",
         "description": "backend.routes.tools.pdf_split_routes",
-        "peekOfCode": "def split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.endswith(\".pdf\"):\n            return jsonify({\"error\": \"Please upload a valid PDF file\"}), 400\n        range_str = request.form.get(\"ranges\", \"\")\n        if not range_str or \"-\" not in range_str:\n            return jsonify({\"error\": \"Invalid page range format\"}), 400\n        try:",
+        "peekOfCode": "def split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.lower().endswith(\".pdf\"):\n            return jsonify({\"error\": \"Please upload a valid PDF file\"}), 400\n        range_str = request.form.get(\"ranges\", \"\")\n        if not range_str or \"-\" not in range_str:\n            return jsonify({\"error\": \"Invalid page range format\"}), 400\n        try:",
         "detail": "backend.routes.tools.pdf_split_routes",
         "documentation": {}
     },
@@ -1387,7 +1393,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_split_routes",
         "description": "backend.routes.tools.pdf_split_routes",
-        "peekOfCode": "pdf_split_bp = Blueprint(\"pdf_split_bp\", __name__)\n# Folder to save temporary files\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-split\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_split_bp.route(\"/api/tools/pdf-split\", methods=[\"POST\"])\ndef split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.endswith(\".pdf\"):",
+        "peekOfCode": "pdf_split_bp = Blueprint(\"pdf_split_bp\", __name__)\n# Folder to save temporary files\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-split\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_split_bp.route(\"\", methods=[\"POST\"])\ndef split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.lower().endswith(\".pdf\"):",
         "detail": "backend.routes.tools.pdf_split_routes",
         "documentation": {}
     },
@@ -1396,7 +1402,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_split_routes",
         "description": "backend.routes.tools.pdf_split_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-split\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_split_bp.route(\"/api/tools/pdf-split\", methods=[\"POST\"])\ndef split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.endswith(\".pdf\"):\n            return jsonify({\"error\": \"Please upload a valid PDF file\"}), 400\n        range_str = request.form.get(\"ranges\", \"\")",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-split\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_split_bp.route(\"\", methods=[\"POST\"])\ndef split_pdf():\n    \"\"\"Split a PDF file by page range.\"\"\"\n    try:\n        uploaded_file = request.files.get(\"file\")\n        if not uploaded_file or not uploaded_file.filename.lower().endswith(\".pdf\"):\n            return jsonify({\"error\": \"Please upload a valid PDF file\"}), 400\n        range_str = request.form.get(\"ranges\", \"\")",
         "detail": "backend.routes.tools.pdf_split_routes",
         "documentation": {}
     },
@@ -1414,7 +1420,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_to_image_routes",
         "description": "backend.routes.tools.pdf_to_image_routes",
-        "peekOfCode": "pdf_to_image_bp = Blueprint(\"pdf_to_image_bp\", __name__)\n# Folder for uploads\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-image\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# Path to Poppler (⚠️ Update this path for your system)\n# Example for Windows:\nPOPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux/Mac, you can remove poppler_path argument completely.\n@pdf_to_image_bp.route(\"/api/tools/pdf-to-image\", methods=[\"POST\"])\ndef pdf_to_image():",
+        "peekOfCode": "pdf_to_image_bp = Blueprint(\"pdf_to_image_bp\", __name__)\n# Folder for uploads\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-image\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# Path to Poppler (⚠️ Update this path to your installed Poppler)\n# Example for Windows:\nPOPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux or Mac, you can remove the `poppler_path` argument entirely.\n@pdf_to_image_bp.route(\"\", methods=[\"POST\"])\ndef pdf_to_image():",
         "detail": "backend.routes.tools.pdf_to_image_routes",
         "documentation": {}
     },
@@ -1423,7 +1429,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_to_image_routes",
         "description": "backend.routes.tools.pdf_to_image_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-image\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# Path to Poppler (⚠️ Update this path for your system)\n# Example for Windows:\nPOPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux/Mac, you can remove poppler_path argument completely.\n@pdf_to_image_bp.route(\"/api/tools/pdf-to-image\", methods=[\"POST\"])\ndef pdf_to_image():\n    \"\"\"Convert a PDF file into individual images and return them as a ZIP.\"\"\"\n    try:",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-image\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# Path to Poppler (⚠️ Update this path to your installed Poppler)\n# Example for Windows:\nPOPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux or Mac, you can remove the `poppler_path` argument entirely.\n@pdf_to_image_bp.route(\"\", methods=[\"POST\"])\ndef pdf_to_image():\n    \"\"\"Convert a PDF file into individual images and return them as a ZIP.\"\"\"\n    try:",
         "detail": "backend.routes.tools.pdf_to_image_routes",
         "documentation": {}
     },
@@ -1432,7 +1438,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_to_image_routes",
         "description": "backend.routes.tools.pdf_to_image_routes",
-        "peekOfCode": "POPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux/Mac, you can remove poppler_path argument completely.\n@pdf_to_image_bp.route(\"/api/tools/pdf-to-image\", methods=[\"POST\"])\ndef pdf_to_image():\n    \"\"\"Convert a PDF file into individual images and return them as a ZIP.\"\"\"\n    try:\n        if \"file\" not in request.files:\n            return jsonify({\"error\": \"No file part in request\"}), 400\n        pdf_file = request.files[\"file\"]\n        if not pdf_file or pdf_file.filename == \"\":",
+        "peekOfCode": "POPPLER_PATH = r\"C:\\poppler-25.07.0\\Library\\bin\"\n# On Linux or Mac, you can remove the `poppler_path` argument entirely.\n@pdf_to_image_bp.route(\"\", methods=[\"POST\"])\ndef pdf_to_image():\n    \"\"\"Convert a PDF file into individual images and return them as a ZIP.\"\"\"\n    try:\n        if \"file\" not in request.files:\n            return jsonify({\"error\": \"No file part in request\"}), 400\n        pdf_file = request.files[\"file\"]\n        if not pdf_file or pdf_file.filename == \"\":",
         "detail": "backend.routes.tools.pdf_to_image_routes",
         "documentation": {}
     },
@@ -1450,7 +1456,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_to_word_routes",
         "description": "backend.routes.tools.pdf_to_word_routes",
-        "peekOfCode": "pdf_to_word_bp = Blueprint(\"pdf_to_word\", __name__)\n# Folder to store uploaded PDFs and converted DOCX files\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-word\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_to_word_bp.route(\"/api/tools/pdf-to-word\", methods=[\"POST\"])\ndef convert_pdf_to_word():\n    \"\"\"\n    Route: POST /api/tools/pdf-to-word\n    Accepts: multipart/form-data (with 'file' field)\n    Returns: converted Word (.docx) file for download",
+        "peekOfCode": "pdf_to_word_bp = Blueprint(\"pdf_to_word_bp\", __name__)\n# Folder to store uploaded PDFs and converted DOCX files\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-word\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_to_word_bp.route(\"\", methods=[\"POST\"])\ndef convert_pdf_to_word():\n    \"\"\"\n    Route: POST /api/tools/pdf-to-word\n    Accepts: multipart/form-data (with 'file' field)\n    Returns: converted Word (.docx) file for download",
         "detail": "backend.routes.tools.pdf_to_word_routes",
         "documentation": {}
     },
@@ -1459,7 +1465,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.pdf_to_word_routes",
         "description": "backend.routes.tools.pdf_to_word_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-word\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_to_word_bp.route(\"/api/tools/pdf-to-word\", methods=[\"POST\"])\ndef convert_pdf_to_word():\n    \"\"\"\n    Route: POST /api/tools/pdf-to-word\n    Accepts: multipart/form-data (with 'file' field)\n    Returns: converted Word (.docx) file for download\n    \"\"\"\n    if \"file\" not in request.files:",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"pdf-to-word\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@pdf_to_word_bp.route(\"\", methods=[\"POST\"])\ndef convert_pdf_to_word():\n    \"\"\"\n    Route: POST /api/tools/pdf-to-word\n    Accepts: multipart/form-data (with 'file' field)\n    Returns: converted Word (.docx) file for download\n    \"\"\"\n    if \"file\" not in request.files:",
         "detail": "backend.routes.tools.pdf_to_word_routes",
         "documentation": {}
     },
@@ -1477,7 +1483,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.powerpoint_to_pdf_routes",
         "description": "backend.routes.tools.powerpoint_to_pdf_routes",
-        "peekOfCode": "powerpoint_to_pdf_bp = Blueprint(\"powerpoint_to_pdf_bp\", __name__)\n# Folder for output PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"powerpoint-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@powerpoint_to_pdf_bp.route(\"/api/tools/ppt-to-pdf\", methods=[\"POST\"])\ndef convert_ppt_to_pdf():\n    \"\"\"\n    Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)\n    \"\"\"\n    if \"file\" not in request.files:",
+        "peekOfCode": "powerpoint_to_pdf_bp = Blueprint(\"powerpoint_to_pdf_bp\", __name__)\n# Folder for output PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"powerpoint-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@powerpoint_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef convert_ppt_to_pdf():\n    \"\"\"\n    Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)\n    \"\"\"\n    if \"file\" not in request.files:",
         "detail": "backend.routes.tools.powerpoint_to_pdf_routes",
         "documentation": {}
     },
@@ -1486,8 +1492,44 @@
         "kind": 5,
         "importPath": "backend.routes.tools.powerpoint_to_pdf_routes",
         "description": "backend.routes.tools.powerpoint_to_pdf_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"powerpoint-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@powerpoint_to_pdf_bp.route(\"/api/tools/ppt-to-pdf\", methods=[\"POST\"])\ndef convert_ppt_to_pdf():\n    \"\"\"\n    Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"powerpoint-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@powerpoint_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef convert_ppt_to_pdf():\n    \"\"\"\n    Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
         "detail": "backend.routes.tools.powerpoint_to_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "check_lock_status",
+        "kind": 2,
+        "importPath": "backend.routes.tools.unlock_pdf_routes",
+        "description": "backend.routes.tools.unlock_pdf_routes",
+        "peekOfCode": "def check_lock_status():\n    if \"pdfFile\" not in request.files:\n        return jsonify({\"message\": \"No PDF uploaded\"}), 400\n    pdf_file = request.files[\"pdfFile\"]\n    temp_path = os.path.join(UPLOAD_FOLDER, pdf_file.filename)\n    pdf_file.save(temp_path)\n    try:\n        with pikepdf.open(temp_path):\n            return jsonify({\n                \"locked\": False,",
+        "detail": "backend.routes.tools.unlock_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "unlock_pdf",
+        "kind": 2,
+        "importPath": "backend.routes.tools.unlock_pdf_routes",
+        "description": "backend.routes.tools.unlock_pdf_routes",
+        "peekOfCode": "def unlock_pdf():\n    if \"pdfFile\" not in request.files:\n        return jsonify({\"message\": \"No file uploaded\"}), 400\n    pdf_file = request.files[\"pdfFile\"]\n    password = request.form.get(\"password\", \"\")\n    temp_input = os.path.join(UPLOAD_FOLDER, pdf_file.filename)\n    output_path = os.path.join(UPLOAD_FOLDER, f\"unlocked_{pdf_file.filename}\")\n    pdf_file.save(temp_input)\n    try:\n        with pikepdf.open(temp_input, password=password) as pdf:",
+        "detail": "backend.routes.tools.unlock_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "unlock_pdf_bp",
+        "kind": 5,
+        "importPath": "backend.routes.tools.unlock_pdf_routes",
+        "description": "backend.routes.tools.unlock_pdf_routes",
+        "peekOfCode": "unlock_pdf_bp = Blueprint(\"unlock_pdf_bp\", __name__)\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"unlock-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# ✅ Check if locked/unlocked\n@unlock_pdf_bp.route(\"/check\", methods=[\"POST\"])\ndef check_lock_status():\n    if \"pdfFile\" not in request.files:\n        return jsonify({\"message\": \"No PDF uploaded\"}), 400\n    pdf_file = request.files[\"pdfFile\"]\n    temp_path = os.path.join(UPLOAD_FOLDER, pdf_file.filename)",
+        "detail": "backend.routes.tools.unlock_pdf_routes",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "backend.routes.tools.unlock_pdf_routes",
+        "description": "backend.routes.tools.unlock_pdf_routes",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"unlock-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n# ✅ Check if locked/unlocked\n@unlock_pdf_bp.route(\"/check\", methods=[\"POST\"])\ndef check_lock_status():\n    if \"pdfFile\" not in request.files:\n        return jsonify({\"message\": \"No PDF uploaded\"}), 400\n    pdf_file = request.files[\"pdfFile\"]\n    temp_path = os.path.join(UPLOAD_FOLDER, pdf_file.filename)\n    pdf_file.save(temp_path)",
+        "detail": "backend.routes.tools.unlock_pdf_routes",
         "documentation": {}
     },
     {
@@ -1504,7 +1546,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.word_to_pdf_routes",
         "description": "backend.routes.tools.word_to_pdf_routes",
-        "peekOfCode": "word_to_pdf_bp = Blueprint(\"word_to_pdf_bp\", __name__)\n# Folder to save converted PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"word-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@word_to_pdf_bp.route(\"/api/tools/word-to-pdf\", methods=[\"POST\"])\ndef convert_word_to_pdf():\n    \"\"\"\n    Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:",
+        "peekOfCode": "word_to_pdf_bp = Blueprint(\"word_to_pdf_bp\", __name__)\n# Folder to save converted PDFs\nUPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"word-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@word_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef convert_word_to_pdf():\n    \"\"\"\n    Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:",
         "detail": "backend.routes.tools.word_to_pdf_routes",
         "documentation": {}
     },
@@ -1513,7 +1555,7 @@
         "kind": 5,
         "importPath": "backend.routes.tools.word_to_pdf_routes",
         "description": "backend.routes.tools.word_to_pdf_routes",
-        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"word-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@word_to_pdf_bp.route(\"/api/tools/word-to-pdf\", methods=[\"POST\"])\ndef convert_word_to_pdf():\n    \"\"\"\n    Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
+        "peekOfCode": "UPLOAD_FOLDER = os.path.join(os.getcwd(), \"uploads\", \"word-to-pdf\")\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\n@word_to_pdf_bp.route(\"\", methods=[\"POST\"])\ndef convert_word_to_pdf():\n    \"\"\"\n    Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).\n    \"\"\"\n    if \"file\" not in request.files:\n        return jsonify({\"error\": \"No file uploaded\"}), 400\n    file = request.files[\"file\"]",
         "detail": "backend.routes.tools.word_to_pdf_routes",
         "documentation": {}
     },

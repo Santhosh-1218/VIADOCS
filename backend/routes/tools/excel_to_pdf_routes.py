@@ -12,7 +12,7 @@ UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "excel-to-pdf")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
-@excel_to_pdf_bp.route("/api/tools/excel-to-pdf", methods=["POST"])
+@excel_to_pdf_bp.route("", methods=["POST"])
 def convert_excel_to_pdf():
     """
     Convert Excel (.xls / .xlsx) files to PDF using LibreOffice (headless mode).

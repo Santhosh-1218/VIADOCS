@@ -11,7 +11,7 @@ UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "word-to-pdf")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
-@word_to_pdf_bp.route("/api/tools/word-to-pdf", methods=["POST"])
+@word_to_pdf_bp.route("", methods=["POST"])
 def convert_word_to_pdf():
     """
     Convert Word (.docx/.doc) to PDF using LibreOffice (headless mode).

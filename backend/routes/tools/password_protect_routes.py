@@ -1,133 +1,80 @@
-import io
 import os
 from flask import Blueprint, request, jsonify, send_file
 import pikepdf
-from werkzeug.utils import secure_filename
 
-password_protect_bp = Blueprint("password_protect_bp", __name__, url_prefix="/api/tools")
+# ✅ Blueprint
+password_protect_bp = Blueprint("password_protect_bp", __name__)
 
-ALLOWED_EXT = {".pdf"}
+# ✅ Upload folder
+UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "password-protect")
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-
-def allowed_file(filename: str):
-    _, ext = os.path.splitext(filename.lower())
-    return ext in ALLOWED_EXT
-
-
-@password_protect_bp.route("/unlock-pdf/check", methods=["POST"])
-def check_pdf_lock():
+# ✅ Check if PDF is password-protected
+@password_protect_bp.route("/check", methods=["POST"])
+def check_lock_status():
     """
-    Check if PDF is locked (encrypted) or unlocked.
-    Expects: form-data -> pdfFile
-    Returns: JSON { locked: bool, message: str }
+    Check whether the uploaded PDF is locked or unlocked.
     """
-    file = request.files.get("pdfFile")
-    if not file:
-        return jsonify({"error": "No file uploaded"}), 400
+    if "pdfFile" not in request.files:
+        return jsonify({"message": "No PDF uploaded"}), 400
 
-    filename = secure_filename(file.filename)
-    if not allowed_file(filename):
-        return jsonify({"error": "Invalid file type"}), 400
+    pdf_file = request.files["pdfFile"]
+    temp_path = os.path.join(UPLOAD_FOLDER, pdf_file.filename)
+    pdf_file.save(temp_path)
 
     try:
-        data = file.read()
-        buf = io.BytesIO(data)
-
-        try:
-            with pikepdf.Pdf.open(buf):
-                return jsonify({
-                    "locked": False,
-                    "message": "This PDF is not password protected."
-                }), 200
-        except pikepdf._qpdf.PasswordError:
+        with pikepdf.open(temp_path):
             return jsonify({
-                "locked": True,
-                "message": "This PDF is password protected."
+                "locked": False,
+                "message": "This PDF is unlocked and can be protected."
             }), 200
+    except pikepdf.PasswordError:
+        return jsonify({
+            "locked": True,
+            "message": "This PDF is already password-protected."
+        }), 200
     except Exception as e:
-        return jsonify({"error": f"Error checking PDF: {str(e)}"}), 500
+        print(f"❌ PDF Check Error: {e}")
+        return jsonify({"message": f"Error reading PDF: {str(e)}"}), 500
+    finally:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
 
 
-@password_protect_bp.route("/password-protect", methods=["POST"])
+# ✅ Set password protection on an unlocked PDF
+@password_protect_bp.route("", methods=["POST"])
 def password_protect():
     """
-    Add password to an unlocked PDF file.
-    Expects: form-data -> pdf (file), password (string)
-    Returns: protected PDF file (as blob)
+    Protect an unlocked PDF with a new password.
     """
-    file = request.files.get("pdf")
-    password = request.form.get("password")
+    if "pdf" not in request.files or "password" not in request.form:
+        return jsonify({"message": "Missing file or password"}), 400
 
-    if not file or not password:
-        return jsonify({"error": "Missing PDF or password"}), 400
+    pdf_file = request.files["pdf"]
+    password = request.form["password"]
 
-    filename = secure_filename(file.filename)
-    if not allowed_file(filename):
-        return jsonify({"error": "Invalid file type"}), 400
+    temp_input = os.path.join(UPLOAD_FOLDER, pdf_file.filename)
+    output_path = os.path.join(UPLOAD_FOLDER, f"protected_{pdf_file.filename}")
+    pdf_file.save(temp_input)
 
     try:
-        data = file.read()
-        input_pdf = io.BytesIO(data)
-        output_pdf = io.BytesIO()
-
-        # Open the PDF to verify it is not locked
-        try:
-            with pikepdf.Pdf.open(input_pdf) as pdf:
-                encryption = pikepdf.Encryption(owner=password, user=password)
-                pdf.save(output_pdf, encryption=encryption)
-                output_pdf.seek(0)
-
-            return send_file(
-                output_pdf,
-                as_attachment=True,
-                download_name=f"{os.path.splitext(filename)[0]}_protected.pdf",
-                mimetype="application/pdf",
+        with pikepdf.open(temp_input) as pdf:
+            pdf.save(
+                output_path,
+                encryption=pikepdf.Encryption(owner=password, user=password, R=4)
             )
 
-        except pikepdf._qpdf.PasswordError:
-            return jsonify({"error": "This PDF is already password protected."}), 400
-
+        return send_file(
+            output_path,
+            as_attachment=True,
+            download_name=f"protected_{pdf_file.filename}",
+            mimetype="application/pdf",
+        )
+    except pikepdf.PasswordError:
+        return jsonify({"message": "This PDF is already protected."}), 400
     except Exception as e:
-        return jsonify({"error": f"Error protecting PDF: {str(e)}"}), 500
-
-
-@password_protect_bp.route("/password-protect/reset", methods=["POST"])
-def reset_pdf_password():
-    """
-    Reset password for an already locked PDF file.
-    Expects: form-data -> pdf (file), oldPassword, newPassword
-    Returns: PDF file with updated password
-    """
-    file = request.files.get("pdf")
-    old_pw = request.form.get("oldPassword")
-    new_pw = request.form.get("newPassword")
-
-    if not file or not old_pw or not new_pw:
-        return jsonify({"error": "Missing file or passwords"}), 400
-
-    filename = secure_filename(file.filename)
-    if not allowed_file(filename):
-        return jsonify({"error": "Invalid file type"}), 400
-
-    try:
-        data = file.read()
-        input_pdf = io.BytesIO(data)
-        output_pdf = io.BytesIO()
-
-        try:
-            with pikepdf.Pdf.open(input_pdf, password=old_pw) as pdf:
-                encryption = pikepdf.Encryption(owner=new_pw, user=new_pw)
-                pdf.save(output_pdf, encryption=encryption)
-                output_pdf.seek(0)
-
-            return send_file(
-                output_pdf,
-                as_attachment=True,
-                download_name=f"{os.path.splitext(filename)[0]}_reset.pdf",
-                mimetype="application/pdf",
-            )
-        except pikepdf._qpdf.PasswordError:
-            return jsonify({"error": "Incorrect old password or cannot open PDF."}), 403
-
-    except Exception as e:
-        return jsonify({"error": f"Error resetting password: {str(e)}"}), 500
+        print(f"❌ PDF Protect Error: {e}")
+        return jsonify({"message": f"Error protecting PDF: {str(e)}"}), 500
+    finally:
+        if os.path.exists(temp_input):
+            os.remove(temp_input)

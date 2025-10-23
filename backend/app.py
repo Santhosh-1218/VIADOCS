@@ -51,7 +51,7 @@ app.register_blueprint(docai_bp, url_prefix="/api/docai")
 app.register_blueprint(feedback_bp, url_prefix="/api/feedback")
 
 # ✅ Register all tool routes (PDF → Word, PDF → Image, etc.)
-app.register_blueprint(tools_bp)
+app.register_blueprint(tools_bp, url_prefix="/api/tools")
 
 # ✅ Health Check Route
 @app.route("/api/health")

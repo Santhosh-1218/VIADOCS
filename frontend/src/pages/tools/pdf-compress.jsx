@@ -73,7 +73,7 @@ export default function PdfCompress() {
       formData.append("mode", mode);
 
       const response = await axios.post(
-        "http://localhost:5000/api/tools/pdf/compress",
+        "http://localhost:5000/api/tools/pdf-compress",
         formData,
         {
           headers: { Authorization: `Bearer ${token}` },

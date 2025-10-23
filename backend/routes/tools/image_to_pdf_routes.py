@@ -12,7 +12,7 @@ UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "image-to-pdf")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
-@image_to_pdf_bp.route("/api/tools/image-to-pdf", methods=["POST"])
+@image_to_pdf_bp.route("", methods=["POST"])
 def image_to_pdf():
     """
     Convert multiple uploaded images into a single PDF file.

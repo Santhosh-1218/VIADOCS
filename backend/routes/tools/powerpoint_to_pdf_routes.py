@@ -11,7 +11,7 @@ UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "powerpoint-to-pdf")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
-@powerpoint_to_pdf_bp.route("/api/tools/ppt-to-pdf", methods=["POST"])
+@powerpoint_to_pdf_bp.route("", methods=["POST"])
 def convert_ppt_to_pdf():
     """
     Convert PowerPoint (.ppt/.pptx) to PDF using LibreOffice (headless mode)

@@ -12,13 +12,13 @@ pdf_to_image_bp = Blueprint("pdf_to_image_bp", __name__)
 UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "pdf-to-image")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-# Path to Poppler (⚠️ Update this path for your system)
+# Path to Poppler (⚠️ Update this path to your installed Poppler)
 # Example for Windows:
 POPPLER_PATH = r"C:\poppler-25.07.0\Library\bin"
+# On Linux or Mac, you can remove the `poppler_path` argument entirely.
 
-# On Linux/Mac, you can remove poppler_path argument completely.
 
-@pdf_to_image_bp.route("/api/tools/pdf-to-image", methods=["POST"])
+@pdf_to_image_bp.route("", methods=["POST"])
 def pdf_to_image():
     """Convert a PDF file into individual images and return them as a ZIP."""
     try:
@@ -34,10 +34,10 @@ def pdf_to_image():
         pdf_path = os.path.join(UPLOAD_FOLDER, filename)
         pdf_file.save(pdf_path)
 
-        # Convert each page to image using Poppler
+        # Convert PDF pages to images
         images = convert_from_path(pdf_path, dpi=300, poppler_path=POPPLER_PATH)
 
-        # Create ZIP file in memory
+        # Create ZIP in memory
         zip_buffer = io.BytesIO()
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zipf:
             for i, img in enumerate(images, start=1):
@@ -48,10 +48,10 @@ def pdf_to_image():
 
         zip_buffer.seek(0)
 
-        # Delete uploaded PDF after processing
+        # Remove uploaded PDF
         os.remove(pdf_path)
 
-        # Send the ZIP file as response
+        # Send ZIP back to frontend
         return send_file(
             zip_buffer,
             as_attachment=True,
@@ -61,4 +61,4 @@ def pdf_to_image():
 
     except Exception as e:
         print(f"[ERROR] PDF to Image conversion failed: {e}")
-        return jsonify({"error": "Failed to convert PDF to images", "details": str(e)}), 500
+        return jsonify({"error": "Failed to convert PDF", "details": str(e)}), 500

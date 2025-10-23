@@ -4,14 +4,13 @@ from flask import Blueprint, request, jsonify, send_file
 from pdf2docx import Converter
 
 # Create Blueprint for PDF to Word route
-pdf_to_word_bp = Blueprint("pdf_to_word", __name__)
+pdf_to_word_bp = Blueprint("pdf_to_word_bp", __name__)
 
 # Folder to store uploaded PDFs and converted DOCX files
 UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads", "pdf-to-word")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-
-@pdf_to_word_bp.route("/api/tools/pdf-to-word", methods=["POST"])
+@pdf_to_word_bp.route("", methods=["POST"])
 def convert_pdf_to_word():
     """
     Route: POST /api/tools/pdf-to-word
@@ -57,7 +56,7 @@ def convert_pdf_to_word():
         return jsonify({"error": f"Conversion failed: {str(e)}"}), 500
 
     finally:
-        # Clean up the uploaded PDF file after conversion
+        # Clean up uploaded PDF
         try:
             if os.path.exists(pdf_path):
                 os.remove(pdf_path)

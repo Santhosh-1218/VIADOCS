@@ -12,9 +12,10 @@ from routes.user_routes import user_bp
 from routes.contact_routes import contact_bp
 from routes.docai_routes import docai_bp
 from routes.feedback_routes import feedback_bp
-
+from routes.admin_routes import admin_bp
 # ✅ Import all document tool routes (from routes/tools/)
 from routes.tools_routes import tools_bp
+from routes.user_activity_routes import activity_bp
 
 # ✅ Load environment variables
 load_dotenv()
@@ -49,9 +50,11 @@ app.register_blueprint(user_bp, url_prefix="/api")
 app.register_blueprint(contact_bp, url_prefix="/api/contact")
 app.register_blueprint(docai_bp, url_prefix="/api/docai")
 app.register_blueprint(feedback_bp, url_prefix="/api/feedback")
+app.register_blueprint(admin_bp, url_prefix="/api/admin")
 
 # ✅ Register all tool routes (PDF → Word, PDF → Image, etc.)
 app.register_blueprint(tools_bp, url_prefix="/api/tools")
+app.register_blueprint(activity_bp, url_prefix="/api/activity")
 
 # ✅ Health Check Route
 @app.route("/api/health")

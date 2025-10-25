@@ -2,11 +2,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer({ sticky = false }) {
   const navigate = useNavigate();
 
+  // If sticky, position fixed at bottom and add a shadow to separate from content
+  const stickyClasses = sticky ? "fixed bottom-0 left-0 w-full z-40 shadow-inner" : "";
+
   return (
-    <footer className="py-8 text-white bg-gray-800">
+    <footer className={`${stickyClasses} py-8 text-white bg-gray-800`}>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
           {/* Left Side */}

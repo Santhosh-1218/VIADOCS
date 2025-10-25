@@ -73,11 +73,11 @@ const AnimatedText = () => {
 
 export default function Home() {
   const [docs, setDocs] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [deleteTarget, setDeleteTarget] = useState(null);
   const [deleteInput, setDeleteInput] = useState("");
   const [roleModalOpen, setRoleModalOpen] = useState(false);
-  const [selectedRole, setSelectedRole] = useState("");
   const [loadingRoleSave, setLoadingRoleSave] = useState(false);
   const timeoutRef = useRef(null);
   const docsContainerRef = useRef(null);
@@ -314,11 +314,13 @@ export default function Home() {
   };
 
   return (
-    <div ref={docsContainerRef} className="max-w-6xl mx-auto">
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#EAF6FF] via-[#F3F8FF] to-[#E4E1FF]">
-      <Header />
-      <main className="flex-1 px-6 py-10">
-        <div className="max-w-6xl mx-auto">
+    // Outer wrapper is full width so background and footer span the entire viewport
+    <div ref={docsContainerRef} className="flex flex-col min-h-screen bg-gradient-to-br from-[#EAF6FF] via-[#F3F8FF] to-[#E4E1FF] w-full">
+      {/* make this a flex column and allow it to grow so `main.flex-1` can push footer to bottom */}
+      <div className="flex flex-col flex-1 w-full">
+        <Header />
+  <main className="flex-1 px-6 py-10"> 
+          <div className="max-w-6xl mx-auto">
           {/* Welcome Section */}
           <div className="p-8 mb-10 text-center bg-white border border-[#1EC6D7]/30 shadow-lg rounded-2xl">
             <h2 className="text-3xl font-extrabold text-gray-900">
@@ -420,25 +422,62 @@ export default function Home() {
           {/* Document List */}
           {isLoggedIn && (
             <div className="mt-6 border-t-2 border-[#1EC6D7]/30">
-              {/* Desktop Header */}
-              <div className="hidden sm:grid grid-cols-[60px,1fr,140px,80px] md:grid-cols-[80px,1fr,180px,100px] font-semibold bg-[#EAF6FF] text-gray-700 py-3 px-2 sm:px-4 rounded-t-lg">
-                <span className="text-xs text-center md:text-sm">S. No</span>
-                <span className="text-xs md:text-sm">Name</span>
-                <span className="pr-2 text-xs text-right md:text-sm">Date Created</span>
-                <span className="text-xs text-right md:text-sm">Actions</span>
+              {/* Search bar for documents */}
+              <div className="mb-6">
+                <div className="flex items-center justify-between gap-4 px-4 py-3 bg-white rounded-lg shadow-sm">
+                  <div className="relative flex-1">
+                    <svg
+                      className="absolute w-4 h-4 text-gray-400 -translate-y-1/2 left-3 top-1/2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
+                    </svg>
+                    <input
+                      type="search"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder="Search documents..."
+                      className="w-full sm:max-w-md pl-10 pr-4 py-2 text-sm bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4066E0] focus:border-transparent shadow-sm"
+                    />
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <span className="text-gray-500">No. of docs:</span>
+                    <span className="font-medium text-[#4066E0]">{docs.length}</span>
+                  </div>
+                </div>
               </div>
 
-              {/* Mobile Header */}
-              <div className="grid grid-cols-[1fr,80px] sm:hidden font-semibold bg-[#EAF6FF] text-gray-700 py-3 px-3 rounded-t-lg">
-                <span className="text-sm">Document</span>
-                <span className="text-sm text-right">Actions</span>
-              </div>
+              <div className="bg-white rounded-lg shadow-sm">
+                {/* Desktop Header */}
+                <div className="hidden sm:grid grid-cols-[60px,1fr,140px,80px] md:grid-cols-[80px,1fr,180px,100px] font-semibold bg-[#EAF6FF] text-gray-700 py-3 px-2 sm:px-4 rounded-t-lg">
+                  <span className="text-xs text-center md:text-sm">S. No</span>
+                  <span className="text-xs md:text-sm">Name</span>
+                  <span className="pr-2 text-xs text-right md:text-sm">Date Created</span>
+                  <span className="text-xs text-right md:text-sm">Actions</span>
+                </div>
 
-              <div className="bg-white rounded-b-lg shadow-sm">
-                {docs.length === 0 ? (
-                  <div className="px-3 py-4 text-sm text-gray-500 border-b">No documents yet.</div>
+                {/* Mobile Header */}
+                <div className="grid grid-cols-[1fr,80px] sm:hidden font-semibold bg-[#EAF6FF] text-gray-700 py-3 px-3 rounded-t-lg">
+                  <span className="text-sm">Document</span>
+                  <span className="text-sm text-right">Actions</span>
+                </div>
+
+                {/* Document List Content */}
+
+                {docs.filter(d => d.name && d.name.toLowerCase().includes(searchQuery.toLowerCase())).length === 0 ? (
+                  <div className="px-3 py-4 text-sm text-gray-500 border-b">No documents found.</div>
                 ) : (
-                  docs.map((doc, i) => (
+                  docs
+                    .filter((d) => d.name && d.name.toLowerCase().includes(searchQuery.toLowerCase()))
+                    .map((doc, i) => (
                     <div key={doc._id}>
                       {/* Desktop Row */}
                       <div
@@ -447,7 +486,7 @@ export default function Home() {
                         <span className="text-xs text-center md:text-sm">{i + 1}</span>
 
                         <span
-                          className="flex items-center gap-1 font-medium text-gray-800 truncate pr-2 text-xs md:text-sm"
+                          className="flex items-center gap-1 pr-2 text-xs font-medium text-gray-800 truncate md:text-sm"
                           title={doc.name}
                         >
                           <span
@@ -668,9 +707,12 @@ export default function Home() {
               </div>
             </div>
           )}
-        </div>
-      </main>
-      <Footer />
+          </div>
+        </main>
+      </div>
+
+  {/* Footer sits outside the centered container so it spans full width */}
+  <Footer />
 
       {/* Delete confirmation modal - requires typing doc name */}
       {deleteTarget && (
@@ -719,20 +761,14 @@ export default function Home() {
             </p>
             <div className="flex gap-3 mb-4">
               <button
-                onClick={() => {
-                  setSelectedRole("student");
-                  saveRole("student");
-                }}
+                onClick={() => saveRole("student")}
                 className="flex-1 px-4 py-2 font-semibold text-white rounded bg-[#4066E0] hover:bg-[#3458c6]"
                 disabled={loadingRoleSave}
               >
                 I'm a Student
               </button>
               <button
-                onClick={() => {
-                  setSelectedRole("employee");
-                  saveRole("employee");
-                }}
+                onClick={() => saveRole("employee")}
                 className="flex-1 px-4 py-2 font-semibold text-white rounded bg-[#1EC6D7] hover:bg-[#18bfc3]"
                 disabled={loadingRoleSave}
               >
@@ -746,6 +782,5 @@ export default function Home() {
         </div>
       )}
     </div>
-  </div>
   );
 }

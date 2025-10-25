@@ -376,6 +376,38 @@
         "documentation": {}
     },
     {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "current_app",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "request",
         "importPath": "flask",
         "description": "flask",
@@ -497,6 +529,38 @@
     },
     {
         "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "current_app",
         "importPath": "flask",
         "description": "flask",
         "isExtraImport": true,
@@ -798,6 +862,22 @@
         "documentation": {}
     },
     {
+        "label": "jwt_required",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
+        "label": "get_jwt_identity",
+        "importPath": "flask_jwt_extended",
+        "description": "flask_jwt_extended",
+        "isExtraImport": true,
+        "detail": "flask_jwt_extended",
+        "documentation": {}
+    },
+    {
         "label": "JWTManager",
         "importPath": "flask_jwt_extended",
         "description": "flask_jwt_extended",
@@ -855,21 +935,19 @@
         "documentation": {}
     },
     {
-        "label": "random",
-        "kind": 6,
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "smtplib",
-        "kind": 6,
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "importPath": "smtplib",
-        "description": "smtplib",
-        "detail": "smtplib",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -929,6 +1007,22 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
         "label": "ObjectId",
         "importPath": "bson",
         "description": "bson",
@@ -950,6 +1044,40 @@
         "description": "bson",
         "isExtraImport": true,
         "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
         "documentation": {}
     },
     {
@@ -1201,11 +1329,27 @@
         "documentation": {}
     },
     {
+        "label": "admin_bp",
+        "importPath": "routes.admin_routes",
+        "description": "routes.admin_routes",
+        "isExtraImport": true,
+        "detail": "routes.admin_routes",
+        "documentation": {}
+    },
+    {
         "label": "tools_bp",
         "importPath": "routes.tools_routes",
         "description": "routes.tools_routes",
         "isExtraImport": true,
         "detail": "routes.tools_routes",
+        "documentation": {}
+    },
+    {
+        "label": "activity_bp",
+        "importPath": "routes.user_activity_routes",
+        "description": "routes.user_activity_routes",
+        "isExtraImport": true,
+        "detail": "routes.user_activity_routes",
         "documentation": {}
     },
     {
@@ -1222,7 +1366,7 @@
         "kind": 2,
         "importPath": "backend.config.mongo",
         "description": "backend.config.mongo",
-        "peekOfCode": "def init_db(app: Flask):\n    app.config[\"MONGO_URI\"] = os.getenv(\"MONGO_URI\")\n    mongo.init_app(app)",
+        "peekOfCode": "def init_db(app: Flask):\n    app.config[\"MONGO_URI\"] = os.getenv(\"MONGODB_URI\")\n    mongo.init_app(app)\n    # ✅ Attach DB to app context for easy access\n    app.db = mongo.db\n    print(\"✅ MongoDB initialized via Flask-PyMongo\")",
         "detail": "backend.config.mongo",
         "documentation": {}
     },
@@ -1231,7 +1375,7 @@
         "kind": 5,
         "importPath": "backend.config.mongo",
         "description": "backend.config.mongo",
-        "peekOfCode": "mongo = PyMongo()\ndef init_db(app: Flask):\n    app.config[\"MONGO_URI\"] = os.getenv(\"MONGO_URI\")\n    mongo.init_app(app)",
+        "peekOfCode": "mongo = PyMongo()\ndef init_db(app: Flask):\n    app.config[\"MONGO_URI\"] = os.getenv(\"MONGODB_URI\")\n    mongo.init_app(app)\n    # ✅ Attach DB to app context for easy access\n    app.db = mongo.db\n    print(\"✅ MongoDB initialized via Flask-PyMongo\")",
         "detail": "backend.config.mongo",
         "documentation": {}
     },
@@ -1560,6 +1704,69 @@
         "documentation": {}
     },
     {
+        "label": "get_admin_dashboard",
+        "kind": 2,
+        "importPath": "backend.routes.admin_routes",
+        "description": "backend.routes.admin_routes",
+        "peekOfCode": "def get_admin_dashboard():\n    try:\n        db = current_app.db\n        if db is None:\n            return jsonify({\"error\": \"Database connection failed\"}), 500\n        users_col = db[\"users\"]\n        docs_col = db[\"documents\"]\n        # --- Query Parameters ---\n        referral_filter = request.args.get(\"referral\", \"overall\").upper()\n        period = request.args.get(\"period\", \"daily\").lower()  # daily, weekly, monthly",
+        "detail": "backend.routes.admin_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_feedbacks",
+        "kind": 2,
+        "importPath": "backend.routes.admin_routes",
+        "description": "backend.routes.admin_routes",
+        "peekOfCode": "def get_all_feedbacks():\n    \"\"\"Fetch all feedbacks from MongoDB\"\"\"\n    try:\n        db = current_app.db\n        if db is None:\n            return jsonify({\"error\": \"Database connection failed\"}), 500\n        feedbacks_col = db[\"feedbacks\"]\n        all_feedbacks = list(feedbacks_col.find({}, {\"_id\": 1, \"name\": 1, \"email\": 1, \"rating\": 1, \"message\": 1, \"createdAt\": 1}))\n        # Convert ObjectId to string for frontend\n        for fb in all_feedbacks:",
+        "detail": "backend.routes.admin_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_feedback",
+        "kind": 2,
+        "importPath": "backend.routes.admin_routes",
+        "description": "backend.routes.admin_routes",
+        "peekOfCode": "def delete_feedback(feedback_id):\n    \"\"\"Delete a specific feedback by ID\"\"\"\n    try:\n        db = current_app.db\n        if db is None:\n            return jsonify({\"error\": \"Database connection failed\"}), 500\n        feedbacks_col = db[\"feedbacks\"]\n        result = feedbacks_col.delete_one({\"_id\": ObjectId(feedback_id)})\n        if result.deleted_count == 0:\n            return jsonify({\"message\": \"Feedback not found\"}), 404",
+        "detail": "backend.routes.admin_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_contacts",
+        "kind": 2,
+        "importPath": "backend.routes.admin_routes",
+        "description": "backend.routes.admin_routes",
+        "peekOfCode": "def get_all_contacts():\n    \"\"\"Fetch all contact messages\"\"\"\n    try:\n        db = current_app.db\n        if db is None:\n            return jsonify({\"error\": \"Database connection failed\"}), 500\n        contact_col = db[\"contact_messages\"]\n        all_contacts = list(contact_col.find({}, {\n            \"_id\": 1,\n            \"name\": 1,",
+        "detail": "backend.routes.admin_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_contact",
+        "kind": 2,
+        "importPath": "backend.routes.admin_routes",
+        "description": "backend.routes.admin_routes",
+        "peekOfCode": "def delete_contact(contact_id):\n    \"\"\"Delete a specific contact message\"\"\"\n    try:\n        db = current_app.db\n        if db is None:\n            return jsonify({\"error\": \"Database connection failed\"}), 500\n        contact_col = db[\"contact_messages\"]\n        result = contact_col.delete_one({\"_id\": ObjectId(contact_id)})\n        if result.deleted_count == 0:\n            return jsonify({\"message\": \"Contact not found\"}), 404",
+        "detail": "backend.routes.admin_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_visitors_analytics",
+        "kind": 2,
+        "importPath": "backend.routes.admin_routes",
+        "description": "backend.routes.admin_routes",
+        "peekOfCode": "def get_visitors_analytics():\n    \"\"\"\n    Returns analytics about user activity (daily time usage, visitors, etc.)\n    Requires collections:\n      - user_activity  (tracks per-day total_minutes)\n      - users          (basic user info)\n    \"\"\"\n    try:\n        db = current_app.db\n        if db is None:",
+        "detail": "backend.routes.admin_routes",
+        "documentation": {}
+    },
+    {
+        "label": "admin_bp",
+        "kind": 5,
+        "importPath": "backend.routes.admin_routes",
+        "description": "backend.routes.admin_routes",
+        "peekOfCode": "admin_bp = Blueprint(\"admin_bp\", __name__)\n@admin_bp.route(\"/dashboard\", methods=[\"GET\"])\ndef get_admin_dashboard():\n    try:\n        db = current_app.db\n        if db is None:\n            return jsonify({\"error\": \"Database connection failed\"}), 500\n        users_col = db[\"users\"]\n        docs_col = db[\"documents\"]\n        # --- Query Parameters ---",
+        "detail": "backend.routes.admin_routes",
+        "documentation": {}
+    },
+    {
         "label": "check_username",
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
@@ -1582,7 +1789,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def check_referral():\n    \"\"\"Validate referral code\"\"\"\n    code = request.args.get(\"code\", \"\").strip().upper()\n    valid = code in VALID_REFERRALS\n    return jsonify({\"valid\": valid}), 200\n# ----------------------------------------------------------\n# REGISTER NEW USER\n# ----------------------------------------------------------\n@auth_bp.route(\"/register\", methods=[\"POST\"])\ndef register():",
+        "peekOfCode": "def check_referral():\n    \"\"\"Validate referral code\"\"\"\n    code = request.args.get(\"code\", \"\").strip().upper()\n    valid = code in VALID_REFERRALS\n    return jsonify({\"valid\": valid}), 200\n# ----------------------------------------------------------\n# REGISTER NEW USER\n# ----------------------------------------------------------\n# ----------------------------------------------------------\n# REGISTER NEW USER",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1591,7 +1798,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def register():\n    \"\"\"Register a new user\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        required = [\"username\", \"first_name\", \"last_name\",\n                    \"email\", \"password\", \"dob\", \"gender\"]\n        if not all(k in data and data[k] for k in required):\n            return jsonify({\"error\": \"Missing fields\"}), 400\n        if db.users.find_one({\"email\": data[\"email\"].lower()}):",
+        "peekOfCode": "def register():\n    \"\"\"Register a new user\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        required = [\"username\", \"first_name\", \"last_name\",\n                    \"email\", \"password\", \"dob\", \"gender\"]\n        if not all(k in data and data[k] for k in required):\n            return jsonify({\"error\": \"Missing fields\"}), 400\n        # Check for duplicates",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1600,7 +1807,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def login():\n    \"\"\"Authenticate user and return JWT\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        email = data.get(\"email\", \"\").lower()\n        password = data.get(\"password\", \"\")\n        user = db.users.find_one({\"email\": email})\n        if not user or not check_password(password, user[\"password\"]):\n            return jsonify({\"message\": \"Invalid email or password\"}), 401",
+        "peekOfCode": "def login():\n    \"\"\"Authenticate user or admin and return JWT\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        email = data.get(\"email\", \"\").strip().lower()\n        password = data.get(\"password\", \"\")\n        # ✅ ADMIN LOGIN CHECK\n        ADMIN_EMAIL = \"admin07@gmail.com\"\n        ADMIN_PASSWORD = \"admin@viadocs.in\"",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -2016,6 +2223,24 @@
         "description": "backend.routes.feedback_routes",
         "peekOfCode": "users_collection = db[\"users\"]\n# ✅ Correct route (NO /api/feedback inside)\n@feedback_bp.route(\"\", methods=[\"POST\", \"OPTIONS\"])\n@cross_origin(origins=[FRONTEND_ORIGIN])\n@jwt_required(optional=True)\ndef feedback():\n    # Handle preflight request (CORS)\n    if request.method == \"OPTIONS\":\n        return jsonify({\"status\": \"ok\"}), 200\n    data = request.get_json(silent=True)",
         "detail": "backend.routes.feedback_routes",
+        "documentation": {}
+    },
+    {
+        "label": "track_usage",
+        "kind": 2,
+        "importPath": "backend.routes.user_activity_routes",
+        "description": "backend.routes.user_activity_routes",
+        "peekOfCode": "def track_usage():\n    \"\"\"\n    Logs user's daily usage time (minutes).\n    Skips if admin or invalid ObjectId.\n    \"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        data = request.get_json() or {}\n        duration = float(data.get(\"duration\", 0))",
+        "detail": "backend.routes.user_activity_routes",
+        "documentation": {}
+    },
+    {
+        "label": "activity_bp",
+        "kind": 5,
+        "importPath": "backend.routes.user_activity_routes",
+        "description": "backend.routes.user_activity_routes",
+        "peekOfCode": "activity_bp = Blueprint(\"activity_bp\", __name__)\n@activity_bp.route(\"/track-usage\", methods=[\"POST\"])\n@jwt_required()\ndef track_usage():\n    \"\"\"\n    Logs user's daily usage time (minutes).\n    Skips if admin or invalid ObjectId.\n    \"\"\"\n    try:\n        db = current_app.db",
+        "detail": "backend.routes.user_activity_routes",
         "documentation": {}
     },
     {

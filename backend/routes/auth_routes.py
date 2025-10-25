@@ -70,6 +70,9 @@ def check_referral():
 # ----------------------------------------------------------
 # REGISTER NEW USER
 # ----------------------------------------------------------
+# ----------------------------------------------------------
+# REGISTER NEW USER
+# ----------------------------------------------------------
 @auth_bp.route("/register", methods=["POST"])
 def register():
     """Register a new user"""
@@ -82,15 +85,18 @@ def register():
         if not all(k in data and data[k] for k in required):
             return jsonify({"error": "Missing fields"}), 400
 
+        # Check for duplicates
         if db.users.find_one({"email": data["email"].lower()}):
             return jsonify({"error": "Email already registered"}), 400
         if db.users.find_one({"username": data["username"].lower()}):
             return jsonify({"error": "Username already taken"}), 400
 
+        # Validate referral
         referred_by = data.get("referred_by", "").strip().upper()
         if referred_by and referred_by not in VALID_REFERRALS:
             return jsonify({"error": "Invalid referral code"}), 400
 
+        # ✅ Insert new user with automatic registration timestamp
         db.users.insert_one({
             "username": data["username"].lower(),
             "first_name": data["first_name"],
@@ -103,7 +109,10 @@ def register():
             "plan": "Starter",
             "role": "",
             "premium": False,
-            "profile_image": None
+            "profile_image": None,
+            # ✅ Auto registration date (UTC)
+            # store as a datetime object so server-side queries/filters work correctly
+            "createdAt": datetime.utcnow()
         })
 
         return jsonify({"message": "Account created successfully"}), 201
@@ -112,32 +121,52 @@ def register():
         print("❌ register error:", e)
         return jsonify({"error": "Server error"}), 500
 
-
 # ----------------------------------------------------------
-# LOGIN USER
+# LOGIN USER (Supports Admin)
 # ----------------------------------------------------------
 @auth_bp.route("/login", methods=["POST"])
 def login():
-    """Authenticate user and return JWT"""
+    """Authenticate user or admin and return JWT"""
     try:
         db = current_app.db
         data = request.get_json()
 
-        email = data.get("email", "").lower()
+        email = data.get("email", "").strip().lower()
         password = data.get("password", "")
 
+        # ✅ ADMIN LOGIN CHECK
+        ADMIN_EMAIL = "admin07@gmail.com"
+        ADMIN_PASSWORD = "admin@viadocs.in"
+
+        if email == ADMIN_EMAIL and password == ADMIN_PASSWORD:
+            # Generate admin token (6 hours expiry)
+            token = create_access_token(identity="admin", expires_delta=timedelta(hours=6))
+            print("✅ Admin logged in successfully")
+            return jsonify({
+                "token": token,
+                "role": "admin",
+                "redirect": "/admin/home",
+                "message": "Admin login successful"
+            }), 200
+
+        # ✅ NORMAL USER LOGIN
         user = db.users.find_one({"email": email})
         if not user or not check_password(password, user["password"]):
             return jsonify({"message": "Invalid email or password"}), 401
 
-        token = create_access_token(identity=str(user["_id"]),
-                                    expires_delta=timedelta(hours=6))
-        return jsonify({"token": token, "username": user["username"]}), 200
+        token = create_access_token(identity=str(user["_id"]), expires_delta=timedelta(hours=6))
+        print(f"✅ User logged in: {user['email']}")
+        return jsonify({
+            "token": token,
+            "username": user["username"],
+            "role": user.get("role", "user"),
+            "redirect": "/home",
+            "message": "User login successful"
+        }), 200
 
     except Exception as e:
         print("❌ login error:", e)
         return jsonify({"error": "Server error"}), 500
-
 
 # ----------------------------------------------------------
 # VERIFY TOKEN (Used in Header.jsx)

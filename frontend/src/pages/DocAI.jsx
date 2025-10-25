@@ -61,7 +61,7 @@ export default function DocAI() {
             <Cpu className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#1EC6D7] to-[#6A3FD7]">
-            DocAI — Coming Soon
+            Docxy— Coming Soon
           </h1>
           <p className="max-w-md mt-2 text-center text-gray-600">
             Smart document creation powered by AI — we’re perfecting your next-gen writing assistant.

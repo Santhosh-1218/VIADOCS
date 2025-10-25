@@ -1,24 +1,22 @@
 import React, { useState } from "react";
-import { User, Lock, Eye, EyeOff } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import { User, Lock, Eye, EyeOff } from "lucide-react";
 import logo from "../assets/logo.jpg";
 
-const Login = () => {
-  const [formData, setFormData] = useState({ email: "", password: "" });
+export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // ---------------- Handle Input Change ----------------
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
   const togglePassword = () => setShowPassword((prev) => !prev);
 
-  // ---------------- Handle Form Submit ----------------
-  const handleSubmit = async (e) => {
+  // ✅ Handle Login
+  const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
 
@@ -26,36 +24,32 @@ const Login = () => {
       const res = await fetch("http://localhost:5000/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ email, password }),
       });
 
-      let data = {};
-      try {
-        data = await res.json();
-      } catch {
-        data = { message: "Unexpected server response" };
-      }
+      const data = await res.json();
 
-      // ✅ Handle invalid credentials (401, etc.)
-      if (!res.ok) {
+      if (res.ok) {
+        toast.success(data.message || "Login successful!");
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("role", data.role);
+
+        // ✅ Redirect using backend response
+        const redirectPath = data.redirect || "/home";
+        setTimeout(() => {
+          window.location.href = `http://localhost:3000${redirectPath}`;
+        }, 800);
+      } else {
         toast.error(data.message || "Invalid email or password");
-        setLoading(false);
-        return;
       }
-
-      // ✅ Successful login
-      localStorage.setItem("token", data.token);
-      toast.success("Login successful! Redirecting...");
-      setTimeout(() => navigate("/home"), 1500);
-    } catch (err) {
-      // ❌ Only show friendly message, no console error
-      toast.error("Unable to connect to the server. Please try again.");
+    } catch (error) {
+      console.error("❌ Login Error:", error);
+      toast.error("Unable to connect to the server.");
     } finally {
       setLoading(false);
     }
   };
 
-  // ---------------- UI ----------------
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-gradient-to-b from-[#EAF4FC] to-[#CFE3FA]">
       <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} />
@@ -78,16 +72,15 @@ const Login = () => {
           </h2>
           <p className="mb-6 text-gray-600">Sign in to your account</p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleLogin} className="space-y-6">
             {/* Email */}
             <div className="flex items-center border-b-2 border-gray-300 focus-within:border-[#3F51B5]">
               <User className="mr-3 text-[#3F51B5]" size={20} />
               <input
                 type="email"
-                name="email"
                 placeholder="Email address"
-                value={formData.email}
-                onChange={handleChange}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full py-3 text-gray-700 bg-transparent outline-none"
               />
@@ -98,17 +91,16 @@ const Login = () => {
               <Lock className="mr-3 text-[#3F51B5]" size={20} />
               <input
                 type={showPassword ? "text" : "password"}
-                name="password"
                 placeholder="Password"
-                value={formData.password}
-                onChange={handleChange}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
                 className="w-full py-3 text-gray-700 bg-transparent outline-none"
               />
               <button
                 type="button"
-                className="text-[#3F51B5] hover:text-[#1E88E5]"
                 onClick={togglePassword}
+                className="text-[#3F51B5] hover:text-[#1E88E5]"
               >
                 {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
               </button>
@@ -132,7 +124,7 @@ const Login = () => {
             </button>
           </form>
 
-          {/* Signup link */}
+          {/* Signup Link */}
           <div className="mt-6 text-center text-gray-700">
             Don’t have an account?{" "}
             <Link
@@ -146,6 +138,4 @@ const Login = () => {
       </div>
     </div>
   );
-};
-
-export default Login;
+}

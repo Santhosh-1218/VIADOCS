@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// 🛡 Admin Dashboard
+import AdminDashboard from "./pages/admin/AdminDashboard";
+
+// 🌐 General Pages
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
@@ -35,71 +39,108 @@ import PowerpointToPdf from "./pages/tools/powerpoint-to-pdf";
 import EsignPdf from "./pages/tools/esign-pdf";
 import DocTranslator from "./pages/tools/doc-translator";
 
+// 🧠 Lazy import for global loader
+const PageLoader = React.lazy(() => import("./components/PageLoader/PageLoader"));
+
+// 🧩 Helper function for usage tracking
+const trackUserActivity = async () => {
+  const token = localStorage.getItem("token");
+  if (!token) return;
+
+  try {
+    // every call adds 5 minutes usage to today's log
+    await fetch("http://localhost:5000/api/activity/track-usage", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({ duration: 5 }), // ⏱ Add 5 minutes per interval
+    });
+  } catch (err) {
+    console.error("Activity log failed:", err);
+  }
+};
+
 function App() {
-  // Inline wrapper to access location for global loader
+  // Wrapper for route changes and loader
   const Inner = () => {
     const location = useLocation();
     const [loading, setLoading] = React.useState(false);
 
+    // ⏳ Simple page loader effect
     React.useEffect(() => {
-      // show loader for 100ms on route change
       setLoading(true);
       const t = setTimeout(() => setLoading(false), 100);
       return () => clearTimeout(t);
     }, [location.pathname]);
+
+    // ⏱ Track user activity every 5 minutes
+    useEffect(() => {
+      const interval = setInterval(() => {
+        trackUserActivity();
+      }, 5 * 60 * 1000); // every 5 minutes
+      return () => clearInterval(interval);
+    }, []);
+
+    // 🧠 Optional: Track once immediately on login
+    useEffect(() => {
+      const token = localStorage.getItem("token");
+      if (token) trackUserActivity();
+    }, []);
 
     return (
       <>
         <PageLoader visible={loading} />
         <div className="app-with-fixed-header">
           <Routes>
-          {/* 🌐 General Pages */}
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/create-doc" element={<CreateDoc />} />
-          <Route path="/doc/:id" element={<CreateDoc />} />
-          <Route path="/doc/:id/edit" element={<CreateDoc />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/tools" element={<Tools />} />
-          <Route path="/DocAI" element={<DocAI />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/feedback" element={<Feedback />} />
-          <Route path="/help" element={<HelpCenter />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/coming-soon" element={<ComingSoon />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
+            {/* 🌐 General Pages */}
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/create-doc" element={<CreateDoc />} />
+            <Route path="/doc/:id" element={<CreateDoc />} />
+            <Route path="/doc/:id/edit" element={<CreateDoc />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/tools" element={<Tools />} />
+            <Route path="/DocAI" element={<DocAI />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/feedback" element={<Feedback />} />
+            <Route path="/help" element={<HelpCenter />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/coming-soon" element={<ComingSoon />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
 
-          {/* 🛠 Tool Pages */}
-          <Route path="/tools/pdf-to-word" element={<PdfToWord />} />
-          <Route path="/tools/word-to-pdf" element={<WordToPdf />} />
-          <Route path="/tools/pdf-merge" element={<PdfMerge />} />
-          <Route path="/tools/pdf-split" element={<PdfSplit />} />
-          <Route path="/tools/pdf-compress" element={<PdfCompress />} />
-          <Route path="/tools/pdf-editor" element={<PdfEditor />} />
-          <Route path="/tools/image-to-pdf" element={<ImageToPdf />} />
-          <Route path="/tools/pdf-to-image" element={<PdfToImage />} />
-          <Route path="/tools/password-protect" element={<PasswordProtect />} />
-          <Route path="/tools/unlock-pdf" element={<UnlockPdf />} />
-          <Route path="/tools/excel-to-pdf" element={<ExcelToPdf />} />
-          <Route path="/tools/powerpoint-to-pdf" element={<PowerpointToPdf />} />
-          <Route path="/tools/esign-pdf" element={<EsignPdf />} />
-          <Route path="/tools/doc-translator" element={<DocTranslator />} />
+            {/* 🛡 Admin Dashboard */}
+            <Route path="/admin/*" element={<AdminDashboard />} />
+
+            {/* 🛠 Tool Pages */}
+            <Route path="/tools/pdf-to-word" element={<PdfToWord />} />
+            <Route path="/tools/word-to-pdf" element={<WordToPdf />} />
+            <Route path="/tools/pdf-merge" element={<PdfMerge />} />
+            <Route path="/tools/pdf-split" element={<PdfSplit />} />
+            <Route path="/tools/pdf-compress" element={<PdfCompress />} />
+            <Route path="/tools/pdf-editor" element={<PdfEditor />} />
+            <Route path="/tools/image-to-pdf" element={<ImageToPdf />} />
+            <Route path="/tools/pdf-to-image" element={<PdfToImage />} />
+            <Route path="/tools/password-protect" element={<PasswordProtect />} />
+            <Route path="/tools/unlock-pdf" element={<UnlockPdf />} />
+            <Route path="/tools/excel-to-pdf" element={<ExcelToPdf />} />
+            <Route path="/tools/powerpoint-to-pdf" element={<PowerpointToPdf />} />
+            <Route path="/tools/esign-pdf" element={<EsignPdf />} />
+            <Route path="/tools/doc-translator" element={<DocTranslator />} />
           </Routes>
         </div>
       </>
     );
   };
 
-  // lazy import page loader
-  const PageLoader = React.lazy(() => import("./components/PageLoader/PageLoader"));
-
   return (
     <Router>
-     <ToastContainer
+      <ToastContainer
         position="top-center"
         autoClose={2500}
         hideProgressBar={false}

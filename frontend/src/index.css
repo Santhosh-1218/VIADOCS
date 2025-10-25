@@ -4,6 +4,13 @@
 @tailwind utilities;
 /* stylelint-enable at-rule-no-unknown */
 
+/* Ensure full-height layout so pages using min-h-screen and flex column
+   behave correctly and the footer sits at page bottom when content is short */
+html, body, #root {
+  height: 100%;
+}
+
+
 @keyframes gradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

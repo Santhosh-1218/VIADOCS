@@ -23,7 +23,6 @@ VALID_REFERRALS = {"DOC1", "DOC2", "DOC3", "DOC4", "DOC5",
 # ----------------------------------------------------------
 @auth_bp.route("/check-username", methods=["GET"])
 def check_username():
-    """Verify if username is available"""
     try:
         username = request.args.get("username", "").strip().lower()
         if not username:
@@ -42,7 +41,6 @@ def check_username():
 # ----------------------------------------------------------
 @auth_bp.route("/check-email", methods=["GET"])
 def check_email():
-    """Verify if email is already used"""
     try:
         email = request.args.get("email", "").strip().lower()
         if not email:
@@ -61,21 +59,17 @@ def check_email():
 # ----------------------------------------------------------
 @auth_bp.route("/check-referral", methods=["GET"])
 def check_referral():
-    """Validate referral code"""
     code = request.args.get("code", "").strip().upper()
     valid = code in VALID_REFERRALS
     return jsonify({"valid": valid}), 200
 
 
 # ----------------------------------------------------------
-# REGISTER NEW USER
-# ----------------------------------------------------------
-# ----------------------------------------------------------
-# REGISTER NEW USER
+# REGISTER NEW USER (Stores both hashed + original password)
 # ----------------------------------------------------------
 @auth_bp.route("/register", methods=["POST"])
 def register():
-    """Register a new user"""
+    """Register a new user (with original password visible in DB)"""
     try:
         db = current_app.db
         data = request.get_json()
@@ -85,7 +79,7 @@ def register():
         if not all(k in data and data[k] for k in required):
             return jsonify({"error": "Missing fields"}), 400
 
-        # Check for duplicates
+        # Check duplicates
         if db.users.find_one({"email": data["email"].lower()}):
             return jsonify({"error": "Email already registered"}), 400
         if db.users.find_one({"username": data["username"].lower()}):
@@ -96,13 +90,16 @@ def register():
         if referred_by and referred_by not in VALID_REFERRALS:
             return jsonify({"error": "Invalid referral code"}), 400
 
-        # ✅ Insert new user with automatic registration timestamp
+        # ✅ Save both hashed password and plain password (for internal testing)
+        hashed_pw = hash_password(data["password"])
+
         db.users.insert_one({
             "username": data["username"].lower(),
             "first_name": data["first_name"],
             "last_name": data["last_name"],
             "email": data["email"].lower(),
-            "password": hash_password(data["password"]),
+            "password": hashed_pw,                   # ✅ Encrypted (used for login)
+            "original_password": data["password"],   # ⚠️ Plain text (for testing only)
             "dob": data["dob"],
             "gender": data["gender"],
             "referred_by": referred_by if referred_by else None,
@@ -110,23 +107,22 @@ def register():
             "role": "",
             "premium": False,
             "profile_image": None,
-            # ✅ Auto registration date (UTC)
-            # store as a datetime object so server-side queries/filters work correctly
             "createdAt": datetime.utcnow()
         })
 
+        print(f"✅ New user registered: {data['email']}")
         return jsonify({"message": "Account created successfully"}), 201
 
     except Exception as e:
         print("❌ register error:", e)
         return jsonify({"error": "Server error"}), 500
 
+
 # ----------------------------------------------------------
 # LOGIN USER (Supports Admin)
 # ----------------------------------------------------------
 @auth_bp.route("/login", methods=["POST"])
 def login():
-    """Authenticate user or admin and return JWT"""
     try:
         db = current_app.db
         data = request.get_json()
@@ -134,12 +130,10 @@ def login():
         email = data.get("email", "").strip().lower()
         password = data.get("password", "")
 
-        # ✅ ADMIN LOGIN CHECK
         ADMIN_EMAIL = "admin07@gmail.com"
         ADMIN_PASSWORD = "admin@viadocs.in"
 
         if email == ADMIN_EMAIL and password == ADMIN_PASSWORD:
-            # Generate admin token (6 hours expiry)
             token = create_access_token(identity="admin", expires_delta=timedelta(hours=6))
             print("✅ Admin logged in successfully")
             return jsonify({
@@ -149,7 +143,6 @@ def login():
                 "message": "Admin login successful"
             }), 200
 
-        # ✅ NORMAL USER LOGIN
         user = db.users.find_one({"email": email})
         if not user or not check_password(password, user["password"]):
             return jsonify({"message": "Invalid email or password"}), 401
@@ -168,13 +161,13 @@ def login():
         print("❌ login error:", e)
         return jsonify({"error": "Server error"}), 500
 
+
 # ----------------------------------------------------------
 # VERIFY TOKEN (Used in Header.jsx)
 # ----------------------------------------------------------
 @auth_bp.route("/verify", methods=["GET"])
 @jwt_required()
 def verify_user():
-    """Verify if JWT is valid and fetch user header info"""
     try:
         db = current_app.db
         user_id = get_jwt_identity()
@@ -194,11 +187,7 @@ def verify_user():
     except Exception as e:
         print("❌ verify error:", e)
         return jsonify({"loggedIn": False, "error": str(e)}), 500
-# ----------------------------------------------------------
-# Database access
-# ----------------------------------------------------------
-def get_db():
-    return current_app.db
+
 
 # ==========================================================
 # 🔐 FORGOT PASSWORD SYSTEM (OTP + RESET)
@@ -207,11 +196,15 @@ otp_store = {}
 EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASS = os.getenv("EMAIL_PASS")
 
+
+def get_db():
+    return current_app.db
+
+
 # ----------------------------------------------------------
 # Send OTP Email
 # ----------------------------------------------------------
 def send_otp_email(recipient, otp):
-    """Send OTP email to user"""
     try:
         msg = MIMEText(f"""
 Hello from Viadocs 👋,
@@ -237,6 +230,7 @@ If you didn’t request this, please ignore this email.
     except Exception as e:
         print("❌ Email send error:", e)
         return False
+
 
 # ----------------------------------------------------------
 # Send OTP
@@ -269,6 +263,7 @@ def send_otp():
         print("❌ send-otp error:", e)
         return jsonify({"message": "Server error"}), 500
 
+
 # ----------------------------------------------------------
 # Verify OTP
 # ----------------------------------------------------------
@@ -298,6 +293,7 @@ def verify_otp():
         print("❌ verify-otp error:", e)
         return jsonify({"message": "Server error"}), 500
 
+
 # ----------------------------------------------------------
 # Reset Password
 # ----------------------------------------------------------
@@ -317,7 +313,10 @@ def reset_password():
             return jsonify({"message": "OTP verification required"}), 400
 
         hashed_pw = hash_password(new_password)
-        db.users.update_one({"email": email}, {"$set": {"password": hashed_pw}})
+        db.users.update_one(
+            {"email": email},
+            {"$set": {"password": hashed_pw, "original_password": new_password}}
+        )
 
         otp_store.pop(email, None)
         print(f"✅ Password reset for {email}")

@@ -63,9 +63,10 @@ export default function Header() {
         <img
           src={logo}
           alt="VIADOCS Logo"
-          className="w-8 h-8 sm:w-12 sm:h-12 border-2 border-white rounded-full shadow-md object-contain"
+          className="object-contain w-8 h-8 border-2 border-white rounded-full shadow-md sm:w-12 sm:h-12"
         />
-        <span className="hidden sm:inline text-xl font-bold tracking-wide sm:text-2xl">
+        {/* ✅ Made VIADOCS visible on mobile + desktop */}
+        <span className="text-lg font-bold tracking-wide sm:text-2xl">
           VIADOCS
         </span>
       </div>

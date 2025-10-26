@@ -1771,7 +1771,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def check_username():\n    \"\"\"Verify if username is available\"\"\"\n    try:\n        username = request.args.get(\"username\", \"\").strip().lower()\n        if not username:\n            return jsonify({\"available\": False, \"error\": \"Missing username\"}), 400\n        db = current_app.db\n        exists = db.users.find_one({\"username\": username})\n        return jsonify({\"available\": not bool(exists)}), 200\n    except Exception as e:",
+        "peekOfCode": "def check_username():\n    try:\n        username = request.args.get(\"username\", \"\").strip().lower()\n        if not username:\n            return jsonify({\"available\": False, \"error\": \"Missing username\"}), 400\n        db = current_app.db\n        exists = db.users.find_one({\"username\": username})\n        return jsonify({\"available\": not bool(exists)}), 200\n    except Exception as e:\n        print(\"❌ check-username error:\", e)",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1780,7 +1780,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def check_email():\n    \"\"\"Verify if email is already used\"\"\"\n    try:\n        email = request.args.get(\"email\", \"\").strip().lower()\n        if not email:\n            return jsonify({\"available\": False, \"error\": \"Missing email\"}), 400\n        db = current_app.db\n        exists = db.users.find_one({\"email\": email})\n        return jsonify({\"available\": not bool(exists)}), 200\n    except Exception as e:",
+        "peekOfCode": "def check_email():\n    try:\n        email = request.args.get(\"email\", \"\").strip().lower()\n        if not email:\n            return jsonify({\"available\": False, \"error\": \"Missing email\"}), 400\n        db = current_app.db\n        exists = db.users.find_one({\"email\": email})\n        return jsonify({\"available\": not bool(exists)}), 200\n    except Exception as e:\n        print(\"❌ check-email error:\", e)",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1789,7 +1789,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def check_referral():\n    \"\"\"Validate referral code\"\"\"\n    code = request.args.get(\"code\", \"\").strip().upper()\n    valid = code in VALID_REFERRALS\n    return jsonify({\"valid\": valid}), 200\n# ----------------------------------------------------------\n# REGISTER NEW USER\n# ----------------------------------------------------------\n# ----------------------------------------------------------\n# REGISTER NEW USER",
+        "peekOfCode": "def check_referral():\n    code = request.args.get(\"code\", \"\").strip().upper()\n    valid = code in VALID_REFERRALS\n    return jsonify({\"valid\": valid}), 200\n# ----------------------------------------------------------\n# REGISTER NEW USER (Stores both hashed + original password)\n# ----------------------------------------------------------\n@auth_bp.route(\"/register\", methods=[\"POST\"])\ndef register():\n    \"\"\"Register a new user (with original password visible in DB)\"\"\"",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1798,7 +1798,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def register():\n    \"\"\"Register a new user\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        required = [\"username\", \"first_name\", \"last_name\",\n                    \"email\", \"password\", \"dob\", \"gender\"]\n        if not all(k in data and data[k] for k in required):\n            return jsonify({\"error\": \"Missing fields\"}), 400\n        # Check for duplicates",
+        "peekOfCode": "def register():\n    \"\"\"Register a new user (with original password visible in DB)\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        required = [\"username\", \"first_name\", \"last_name\",\n                    \"email\", \"password\", \"dob\", \"gender\"]\n        if not all(k in data and data[k] for k in required):\n            return jsonify({\"error\": \"Missing fields\"}), 400\n        # Check duplicates",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1807,7 +1807,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def login():\n    \"\"\"Authenticate user or admin and return JWT\"\"\"\n    try:\n        db = current_app.db\n        data = request.get_json()\n        email = data.get(\"email\", \"\").strip().lower()\n        password = data.get(\"password\", \"\")\n        # ✅ ADMIN LOGIN CHECK\n        ADMIN_EMAIL = \"admin07@gmail.com\"\n        ADMIN_PASSWORD = \"admin@viadocs.in\"",
+        "peekOfCode": "def login():\n    try:\n        db = current_app.db\n        data = request.get_json()\n        email = data.get(\"email\", \"\").strip().lower()\n        password = data.get(\"password\", \"\")\n        ADMIN_EMAIL = \"admin07@gmail.com\"\n        ADMIN_PASSWORD = \"admin@viadocs.in\"\n        if email == ADMIN_EMAIL and password == ADMIN_PASSWORD:\n            token = create_access_token(identity=\"admin\", expires_delta=timedelta(hours=6))",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1816,7 +1816,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def verify_user():\n    \"\"\"Verify if JWT is valid and fetch user header info\"\"\"\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        user = db.users.find_one({\"_id\": ObjectId(user_id)}, {\"password\": 0})\n        if not user:\n            return jsonify({\"loggedIn\": False}), 404\n        return jsonify({\n            \"loggedIn\": True,",
+        "peekOfCode": "def verify_user():\n    try:\n        db = current_app.db\n        user_id = get_jwt_identity()\n        user = db.users.find_one({\"_id\": ObjectId(user_id)}, {\"password\": 0})\n        if not user:\n            return jsonify({\"loggedIn\": False}), 404\n        return jsonify({\n            \"loggedIn\": True,\n            \"user\": {",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1825,7 +1825,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def get_db():\n    return current_app.db\n# ==========================================================\n# 🔐 FORGOT PASSWORD SYSTEM (OTP + RESET)\n# ==========================================================\notp_store = {}\nEMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email",
+        "peekOfCode": "def get_db():\n    return current_app.db\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,\nYour password reset OTP is: {otp}",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1834,7 +1834,7 @@
         "kind": 2,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "def send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,\nYour password reset OTP is: {otp}\nThis OTP will expire in 5 minutes.\nIf you didn’t request this, please ignore this email.\n— Team Viadocs\n\"\"\")",
+        "peekOfCode": "def send_otp_email(recipient, otp):\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,\nYour password reset OTP is: {otp}\nThis OTP will expire in 5 minutes.\nIf you didn’t request this, please ignore this email.\n— Team Viadocs\n\"\"\")\n        msg[\"Subject\"] = \"Viadocs Password Reset OTP\"",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1879,7 +1879,7 @@
         "kind": 5,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "VALID_REFERRALS = {\"DOC1\", \"DOC2\", \"DOC3\", \"DOC4\", \"DOC5\",\n                   \"DOC6\", \"DOC7\", \"DOC8\", \"DOC9\", \"DOC10\"}\n# ----------------------------------------------------------\n# CHECK USERNAME\n# ----------------------------------------------------------\n@auth_bp.route(\"/check-username\", methods=[\"GET\"])\ndef check_username():\n    \"\"\"Verify if username is available\"\"\"\n    try:\n        username = request.args.get(\"username\", \"\").strip().lower()",
+        "peekOfCode": "VALID_REFERRALS = {\"DOC1\", \"DOC2\", \"DOC3\", \"DOC4\", \"DOC5\",\n                   \"DOC6\", \"DOC7\", \"DOC8\", \"DOC9\", \"DOC10\"}\n# ----------------------------------------------------------\n# CHECK USERNAME\n# ----------------------------------------------------------\n@auth_bp.route(\"/check-username\", methods=[\"GET\"])\ndef check_username():\n    try:\n        username = request.args.get(\"username\", \"\").strip().lower()\n        if not username:",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1888,7 +1888,7 @@
         "kind": 5,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "otp_store = {}\nEMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"",
+        "peekOfCode": "otp_store = {}\nEMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\ndef get_db():\n    return current_app.db\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    try:",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1897,7 +1897,7 @@
         "kind": 5,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "EMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,",
+        "peekOfCode": "EMAIL_USER = os.getenv(\"EMAIL_USER\")\nEMAIL_PASS = os.getenv(\"EMAIL_PASS\")\ndef get_db():\n    return current_app.db\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    try:\n        msg = MIMEText(f\"\"\"",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },
@@ -1906,7 +1906,7 @@
         "kind": 5,
         "importPath": "backend.routes.auth_routes",
         "description": "backend.routes.auth_routes",
-        "peekOfCode": "EMAIL_PASS = os.getenv(\"EMAIL_PASS\")\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    \"\"\"Send OTP email to user\"\"\"\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,\nYour password reset OTP is: {otp}",
+        "peekOfCode": "EMAIL_PASS = os.getenv(\"EMAIL_PASS\")\ndef get_db():\n    return current_app.db\n# ----------------------------------------------------------\n# Send OTP Email\n# ----------------------------------------------------------\ndef send_otp_email(recipient, otp):\n    try:\n        msg = MIMEText(f\"\"\"\nHello from Viadocs 👋,",
         "detail": "backend.routes.auth_routes",
         "documentation": {}
     },

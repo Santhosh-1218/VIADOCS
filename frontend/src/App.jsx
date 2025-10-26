@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReactGA from "react-ga4"; // ✅ Google Analytics 4
 
 // 🛡 Admin Dashboard
 import AdminDashboard from "./pages/admin/AdminDashboard";
@@ -42,20 +43,22 @@ import DocTranslator from "./pages/tools/doc-translator";
 // 🧠 Lazy import for global loader
 const PageLoader = React.lazy(() => import("./components/PageLoader/PageLoader"));
 
-// 🧩 Helper function for usage tracking
+// ✅ Initialize Google Analytics (replace with your ID)
+ReactGA.initialize("G-DM9KZJCSF6");
+
+// 🧩 Helper: Track user activity in backend
 const trackUserActivity = async () => {
   const token = localStorage.getItem("token");
   if (!token) return;
 
   try {
-    // every call adds 5 minutes usage to today's log
     await fetch("http://localhost:5000/api/activity/track-usage", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify({ duration: 5 }), // ⏱ Add 5 minutes per interval
+      body: JSON.stringify({ duration: 5 }), // ⏱ Add 5 minutes usage to today's log
     });
   } catch (err) {
     console.error("Activity log failed:", err);
@@ -63,27 +66,34 @@ const trackUserActivity = async () => {
 };
 
 function App() {
-  // Wrapper for route changes and loader
   const Inner = () => {
     const location = useLocation();
     const [loading, setLoading] = React.useState(false);
 
-    // ⏳ Simple page loader effect
-    React.useEffect(() => {
+    // ⏳ Page loader animation on route change
+    useEffect(() => {
       setLoading(true);
-      const t = setTimeout(() => setLoading(false), 100);
+      const t = setTimeout(() => setLoading(false), 150);
       return () => clearTimeout(t);
     }, [location.pathname]);
+
+    // ✅ Google Analytics route tracking
+    useEffect(() => {
+      ReactGA.send({
+        hitType: "pageview",
+        page: location.pathname + location.search,
+      });
+    }, [location]);
 
     // ⏱ Track user activity every 5 minutes
     useEffect(() => {
       const interval = setInterval(() => {
         trackUserActivity();
-      }, 5 * 60 * 1000); // every 5 minutes
+      }, 5 * 60 * 1000);
       return () => clearInterval(interval);
     }, []);
 
-    // 🧠 Optional: Track once immediately on login
+    // 🧠 Initial activity log after login
     useEffect(() => {
       const token = localStorage.getItem("token");
       if (token) trackUserActivity();

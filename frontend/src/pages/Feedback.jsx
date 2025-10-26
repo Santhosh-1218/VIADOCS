@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer";
 import axios from "axios";
 import { toast } from "react-toastify";
 
+
 export default function Feedback() {
   const navigate = useNavigate();
   const [user, setUser] = useState({ name: "", email: "" });
